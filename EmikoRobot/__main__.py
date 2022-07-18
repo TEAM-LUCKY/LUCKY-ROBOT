@@ -98,7 +98,7 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 buttons = [
     [
         InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
-        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="admin_"),
+        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="music_"),
     ],
     [
         InlineKeyboardButton(text="✦ ʜᴇʟᴘ ✦", callback_data="help_back"),
@@ -397,17 +397,35 @@ def emiko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "music_":
+    def emiko_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "music_":
         query.message.edit_text(
-            text=f"❤️",
+            text=f"🖤",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="😋 ᴀᴅᴍɪɴ 😋", callback_data="admin_")]]
+                [
+                 [
+                    InlineKeyboardButton(text="😋 ᴀᴅᴍɪɴ 😋", callback_data="admin_"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/oye_golgappu"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="emiko_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back"),
+                 ]
+                ]
             ),
         )
-
-    elif query.data == "admin_":
+    def emiko_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "admin_":
         query.message.edit_text(
             text=f"""🙄 **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:**
 
@@ -424,7 +442,8 @@ def emiko_about_callback(update, context):
 /player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
 
 /queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.""",
-            parse_mode=ParseMode.HTML,
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
             ),
