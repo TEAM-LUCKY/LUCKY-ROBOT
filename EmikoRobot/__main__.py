@@ -409,7 +409,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "admin_":
         query.message.edit_text(
-            text=f"✅**<u>Admin Commands:</u>**
+            text=f"✅**<u>Admin Commands:</u>**\n
 **c** stands for channel play.
 /pause or /cpause - Pause the playing music.
 /resume or /cresume- Resume the paused music.
