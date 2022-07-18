@@ -82,28 +82,33 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+ʜᴇʟʟᴏ {} !
+✪ ᴍʏ ɴᴀᴍᴇ ɪs ʟᴜᴄᴋʏ ʀᴏʙᴏᴛ [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✦ ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ғᴜʟʟ ғʟᴇᴅɢᴇ
+ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ ᴡɪᴛʜ ᴏsᴍ
+sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+ ➻ ᴜᴘᴛɪᴍᴇ: '{}'
+ ➻ ᴜsᴇʀs: '{}'
+ ➻ chats: '{}'
 ────────────────────────
-✪ Hit /help to see my available commands.
+✪ ʜɪᴛ /help ᴛᴏ ꜱᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅ.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"⛰️ ᴍᴜꜱɪᴄ ⛰️, callback_data=f"setting_back_helper"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="✦ ʜᴇʟᴘ ✦", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="ɪɴʟɪɴᴇ 🌋", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="❣️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣️", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
