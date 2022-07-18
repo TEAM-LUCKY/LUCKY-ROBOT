@@ -17,9 +17,9 @@ class Config(object):
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
-    OWNER_USERNAME = "Scotchers"
-    BOT_USERNAME = "EmiexRobot"
-    SUPPORT_CHAT = "FumikaSupportGroup"  # Your own group for support, do not add the @
+    OWNER_USERNAME = "cute_boy701"
+    BOT_USERNAME = "RAMDIMUSICBOT"
+    SUPPORT_CHAT = "TERAYAARHOOMAI"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001748076180
     )  # Prints any new group the bot is added to, prints just the name and ID.
