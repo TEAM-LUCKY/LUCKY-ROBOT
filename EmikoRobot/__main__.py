@@ -107,7 +107,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="❣️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣️", url=f"t.me/{BOT_USERNAME}?startgroup=new"),
+            text="❣️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣️", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -390,7 +390,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
                  ],
                  [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back"),
                  ]
                 ]
             ),
