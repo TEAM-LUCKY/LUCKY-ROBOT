@@ -397,37 +397,28 @@ def emiko_about_callback(update, context):
             ),
         )
 
-    def emiko_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "music_":
+    elif query.data == "music_":
         query.message.edit_text(
-            text=f"🖤",
+            text="❤️"
+            f"\nᴊᴏɪɴ ᴍʏ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ғᴏʀ sᴇᴇ ᴏʀ ʀᴇᴘᴏʀᴛ ᴀ ᴘʀᴏʙʟᴇᴍ ᴏɴ {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="😋 ᴀᴅᴍɪɴ 😋", callback_data="admin_"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/oye_golgappu"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="admin_"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/KennedyProject"),
                  ],
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="emiko_credit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
+                 
                  ]
                 ]
             ),
         )
-    def emiko_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "admin_":
+    elif query.data == "admin_":
         query.message.edit_text(
-            text=f"""🙄 **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:**
+            text="❤️"
+            f"""🙄 **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:**
 
 ᴊᴜsᴛ ᴀᴅᴅ **ᴄ** ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
 
