@@ -416,7 +416,6 @@ def emiko_about_callback(update, context):
             ),
         )
     def emiko_music_callback(update, context):
-    query = update.callback_query
     if query.data == "memiko_":
         query.message.edit_text(
             text="❤️"
