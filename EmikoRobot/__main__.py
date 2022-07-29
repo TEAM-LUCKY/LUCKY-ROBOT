@@ -97,7 +97,7 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 
 buttons = [
     [
-        InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
+        InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_credit"),
         InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="source_"),
     ],
     [
