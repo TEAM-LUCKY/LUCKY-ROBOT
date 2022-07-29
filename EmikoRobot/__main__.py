@@ -97,8 +97,8 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 
 buttons = [
     [
-        InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_credit"),
-        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="source_"),
+        InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
+        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="emiko_credit"),
     ],
     [
         InlineKeyboardButton(text="✦ ʜᴇʟᴘ ✦", callback_data="help_back"),
@@ -436,7 +436,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="source_back")]]
             ),
         )
     elif query.data == "emiko_support":
