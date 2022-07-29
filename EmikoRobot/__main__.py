@@ -415,8 +415,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    def emiko_music_callback(update, context):
-    if query.data == "memiko_":
+    elif query.data == "emiko_credit":
         query.message.edit_text(
             text="❤️"
             f"""🙄 **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:**
@@ -847,10 +846,6 @@ def main():
         emiko_about_callback, pattern=r"emiko_", run_async=True
     )
 
-    music_callback_handler = CallbackQueryHandler(
-        emiko_music_callback, pattern=r"memiko_", run_async=True
-    )
-
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
     )
@@ -869,7 +864,6 @@ def main():
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
-    dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
 
