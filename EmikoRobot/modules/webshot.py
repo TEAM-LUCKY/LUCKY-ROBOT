@@ -23,7 +23,7 @@ from pyrogram.types import Message
 from EmikoRobot import pbot as app
 from EmikoRobot.utils.errors import capture_err
 
-__mod_name__ = "Webshot​"
+__mod_name__ = "ᴡᴇʙꜱʜᴏᴛ"
 
 
 @app.on_message(filters.command("webss"))
