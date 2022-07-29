@@ -97,18 +97,16 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!**
 
 buttons = [
     [
-        InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
-        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="emiko_credit"),
+        InlineKeyboardButton(
+            text=" ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ", url=f"t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="✦ ʜᴇʟᴘ ✦", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="ɪɴʟɪɴᴇ 🌋", switch_inline_query_current_chat=""
-        ),
+        InlineKeyboardButton(text=" ɪɴꜰᴏ ", callback_data="emiko_"),
+        InlineKeyboardButton(text=" ᴍᴜꜱɪᴄ ", callback_data="emiko_credit"),
     ],
     [
         InlineKeyboardButton(
-            text="❣️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣️", url=f"t.me/{bu}?startgroup=new"),
+            text="⇩ ꜱᴇᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
     ],
 ]
 
