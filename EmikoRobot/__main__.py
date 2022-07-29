@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {} !*\n\n
-✪ ᴍʏ ɴᴀᴍᴇ ɪs ʟᴜᴄᴋʏ ʀᴏʙᴏᴛ [✨](https://telegra.ph/file/b01682c4a537f38d98bc6.jpg)
+✪ ᴍʏ ɴᴀᴍᴇ ɪs ʟᴜᴄᴋʏ ʀᴏʙᴏᴛ [✨](https://telegra.ph/file/47d945d51ea33d7f68cfd.jpg)
 ✦ ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ғᴜʟʟ ғʟᴇᴅɢᴇ
 ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ ᴡɪᴛʜ ᴏsᴍ
 sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
@@ -114,13 +114,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+» {dispatcher.bot.first_name} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
+➻ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.
+➻ /donate : sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.
+➻ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
+  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
+  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ."""
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """ʜᴇʏ ʙᴀʙʏ,
+  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
+ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴩᴇʀ](https://t.me/cute_boy701) ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](https://t.me/terayaarhoomai) ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
