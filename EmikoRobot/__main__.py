@@ -98,7 +98,7 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 buttons = [
     [
         InlineKeyboardButton(text="💖 ɪɴꜰᴏ 💖", callback_data="emiko_"),
-        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data=f"settings_back_helper"),
+        InlineKeyboardButton(text="⛰️ ᴍᴜꜱɪᴄ ⛰️", callback_data="memiko_"),
     ],
     [
         InlineKeyboardButton(text="✦ ʜᴇʟᴘ ✦", callback_data="help_back"),
@@ -848,6 +848,10 @@ def main():
         emiko_about_callback, pattern=r"emiko_", run_async=True
     )
 
+    music_callback_handler = CallbackQueryHandler(
+        emiko_music_callback, pattern=r"memiko_", run_async=True
+    )
+
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
     )
@@ -866,6 +870,7 @@ def main():
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
+    dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
 
