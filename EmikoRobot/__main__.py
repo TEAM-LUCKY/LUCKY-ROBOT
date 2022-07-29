@@ -405,8 +405,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="admin_"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/terayaarhoomai"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
@@ -415,7 +415,9 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "admin_":
+    def emiko_music_callback(update, context):
+    query = update.callback_query
+    if query.data == "memiko_":
         query.message.edit_text(
             text="❤️"
             f"""🙄 **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:**
