@@ -385,7 +385,7 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="emiko_menu"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
@@ -459,7 +459,7 @@ def emiko_about_callback(update, context):
         )
 
 
-    elif query.data == "emiko_credit":
+    elif query.data == "emiko_menu":
         query.message.edit_text(
             text=f"๏ {dispatcher.bot.first_name}\n"
             f"\n ɪɴꜰᴏ ᴀʙᴏᴜᴛ ʟᴜᴄᴋʏ",
