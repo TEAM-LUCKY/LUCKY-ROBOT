@@ -1,37 +1,37 @@
 __mod_name__ = "ᴛᴏᴏʟꜱ"
 
 __help__ = """
-*Sangmata Info bot*
-❂ /sg <reply>*:* To check history name
+*Sᴀɴɢᴍᴀᴛᴀ ɪɴꜰᴏ ʙᴏᴛ*
+❂ /sg <ʀᴇᴘʟʏ>*:* ᴛᴏ ᴄʜᴇᴄᴋ ʜɪꜱᴛᴏʀʏ ɴᴀᴍᴇ
 
-*Date-time-Weather*
-❂ /time <country code>*:* Gives information about a timezone.
-❂ /weather <city>*:* Get weather info in a particular place.
-❂ /wttr <city>*:* Advanced weather module, usage same as /weather
-❂ /wttr moon*:* Get the current status of moon
+*ᴅᴀᴛᴇ-ᴛɪᴍᴇ-ᴡᴇᴀᴛʜᴇʀ*
+❂ /time <ᴄᴏᴜɴᴛʀʏ ᴄᴏᴅᴇ>*:* ɢɪᴠᴇꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴛɪᴍᴇᴢᴏɴᴇ.
+❂ /weather <ᴄɪᴛʏ>*:* ɢᴇᴛ ᴡᴇᴀᴛʜᴇʀ ɪɴꜰᴏ ɪɴ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴘʟᴀᴄᴇ.
+❂ /wttr <ᴄɪᴛʏ>*:* ᴀᴅᴠᴀɴᴄᴇᴅ ᴡᴇᴀᴛʜᴇʀ ɪɴꜰᴏ, ᴜꜱᴀɢᴇ ꜱᴀᴍᴇ ᴀꜱ /weather
+❂ /wttr moon*:* ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ꜱᴛᴀᴛᴜꜱ ᴏꜰ ᴍᴏᴏɴ
 
-*Converts*
-❂ /encrypt*:* Encrypts The Given Text
-❂ /decrypt*:* Decrypts Previously Ecrypted Text
-❂ /zip*:* reply to a telegram file to compress it in .zip format
-❂ /unzip*:* reply to a telegram file to decompress it from the .zip format
+*Cᴏɴᴠᴇʀᴛꜱ*
+❂ /encrypt*:* Eɴᴄʀʏᴘᴛꜱ ᴛʜᴇ ɢɪᴠɪɴɢ ᴛᴇxᴛ
+❂ /decrypt*:* ᴅᴇᴄʀʏᴘᴛꜱ ᴘʀᴇᴠɪᴏᴜꜱʟʏ ᴇɴᴄʀʏᴘᴛᴇᴅ ᴛᴇxᴛ
+❂ /zip*:* ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ᴄᴏᴍᴘʀᴇꜱꜱ ɪᴛ ɪɴ .zip ꜰᴏʀᴍᴀᴛ
+❂ /unzip*:* ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ᴅᴇᴄᴏᴍᴘʀᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ᴛʜᴇ .zip ꜰᴏʀᴍᴀᴛ
 
-*Random API*
-❂ /ptl or /asupan: get random video from Instagram timeline
-❂ /chika: get random video from chikakiku
-❂ /wibu:get random short anime video or photos
-❂ /truth: challenge 
-❂ /dare: challenge
-Link To File:
-❂ /up: reply to a direct download link to upload it to telegram as files
+*Rᴀɴᴅᴏᴍ ᴀᴘɪ*
+❂ /ptl ᴏʀ /asupan: ɢᴇᴛ ʀᴇɴᴅᴏᴍ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ɪɴꜱᴛᴀɢʀᴀᴍ ᴛɪᴍᴇʟɪɴᴇ
+❂ /chika: ɢᴇᴛ ʀᴇɴᴅᴏᴍ ᴠɪᴅᴇᴏ ꜰʀᴏᴍ ᴄʜɪᴋᴀᴋɪᴋᴜ
+❂ /wibu: ɢᴇᴛ ʀᴇɴᴅᴏᴍ ꜱʜᴏʀᴛ ᴀɴɪᴍᴇ ᴠɪᴅᴇᴏ ᴏʀ ᴘʜᴏᴛᴏꜱ
+❂ /truth: ᴄʜᴀʟʟᴇɴɢᴇ
+❂ /dare: ᴄʜᴀʟʟᴇɴɢᴇ
+Lɪɴᴋ ᴛᴏ ꜰɪʟᴇ:
+❂ /up: ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴀꜱ ꜰɪʟᴇꜱ
  
- File To Link:
-❂ /transfersh: reply to a telegram file to upload it on transfersh and get direct download link
-❂ /tmpninja: reply to a telegram file to upload it on tmpninja and get direct download link
- File Or Text To Telegraph:
-❂ /tgm : Get Telegraph Link Of Replied Media
-❂ /tgt: Get Telegraph Link of Replied Text
+ Fɪʟᴇ ᴛᴏ ʟɪɴᴋ:
+❂ /transfersh: ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴏɴ ᴛʀᴀɴꜱꜰᴇʀꜱʜ ᴀɴᴅ ɢᴇᴛ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+❂ /tmpninja: ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴏɴ ᴛᴍᴘɴɪɴᴊᴀ ᴀɴᴅ ɢᴇᴛ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ
+ Fɪʟᴇ ᴏʀ ᴛᴇxᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ:
+❂ /tgm : Gᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏꜰ ʀᴇᴘʟɪᴇᴅ ᴍᴇᴅɪᴀ
+❂ /tgt: Gᴇᴛ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏꜰ ʀᴇᴘʟɪᴇᴅ ᴛᴇxᴛ
 
- Tagger
-❂ /tagall : for tag everyone at least 100 member first.
+ Tᴀɢɢᴇʀ
+❂ /tagall : ꜰᴏʀ ᴛᴀɢ ᴇᴠᴇʀʏᴏɴᴇ ᴀᴛʟᴇᴀꜱᴛ 100 ᴍᴇᴍʙᴇʀ ꜰɪʀꜱᴛ.
 """
