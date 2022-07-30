@@ -12,7 +12,7 @@ from EmikoRobot import pbot as app
 from EmikoRobot.utils.errors import capture_err
 from EmikoRobot.utils.pastebin import paste
 
-__mod_name__ = "Paste​"
+__mod_name__ = "ᴘᴀꜱᴛᴇ"
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
