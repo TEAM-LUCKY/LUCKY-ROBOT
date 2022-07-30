@@ -36,7 +36,7 @@ sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
 
-__mod_name__ = "Translator"
+__mod_name__ = "ᴛʀᴀɴꜱʟᴀᴛᴏʀ"
 
 
 trans = Translator()
@@ -65,7 +65,7 @@ async def translate(_, message: Message) -> None:
         dest = "en"
     translation = await trans(to_translate, sourcelang=source, targetlang=dest)
     reply = (
-        f"<b>Translated from {source} to {dest}</b>:\n"
+        f"<b>ᴛʀᴀɴꜱʟᴇᴛᴇᴅ ꜰʀᴏᴍ {source} to {dest}</b>:\n"
         f"<code>{translation.text}</code>"
     )
 
