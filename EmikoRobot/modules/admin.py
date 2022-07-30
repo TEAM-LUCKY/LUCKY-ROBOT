@@ -34,25 +34,25 @@ def set_sticker(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!")
+        return msg.reply_text("» ʏᴏᴜ'ʀᴇ ᴍɪꜱꜱɪɴɢ ʀɪɢʜᴛꜱ ᴛᴏ ᴄʜᴀɴɢᴇ ᴄʜᴀᴛ ɪɴꜰᴏ!")
 
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
             return msg.reply_text(
-                "You need to reply to some sticker to set chat sticker set!"
+                "» ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʀᴇᴘʟʏ ꜱᴏᴍᴇ ꜱᴛɪᴄᴋᴇʀ ᴛᴏ ꜱᴇᴛ ᴄʜᴀᴛ ꜱᴛɪᴄᴋᴇʀ ᴄʜᴀᴛ!"
             )
         stkr = msg.reply_to_message.sticker.set_name
         try:
             context.bot.set_chat_sticker_set(chat.id, stkr)
-            msg.reply_text(f"Successfully set new group stickers in {chat.title}!")
+            msg.reply_text(f"» ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ꜱᴇᴛ ɢʀᴏᴜᴘ ꜱᴛɪᴄᴋᴇʀꜱ ɪɴ {chat.title}!")
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
-                    "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
+                    "» ꜱᴏʀʀʏ, ᴅᴜᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ʀᴇꜱᴛʀɪᴄᴛɪᴏɴꜱ ᴄʜᴀᴛ ɴᴇᴇᴅꜱ ᴛᴏ ʜᴀᴠᴇ ᴍɪɴɪᴍᴜᴍ 100 ᴍᴇᴍʙᴇʀꜱ ʙᴇꜰᴏʀᴇ ᴛʜᴇʏ ᴄᴀɴ ʜᴀᴠᴇ ɢʀᴏᴜᴘ ꜱᴛɪᴄᴋᴇʀꜱ!"
                 )
             msg.reply_text(f"Error! {excp.message}.")
     else:
-        msg.reply_text("You need to reply to some sticker to set chat sticker set!")
+        msg.reply_text("» ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʀᴇᴘʟʏ ꜱᴏᴍᴇ ꜱᴛɪᴄᴋᴇʀ ᴛᴏ ꜱᴇᴛ ᴄʜᴀᴛ ꜱᴛɪᴄᴋᴇʀ ꜱᴇᴛ!")
        
     
 @bot_admin
@@ -63,7 +63,7 @@ def setchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You are missing right to change group info!")
+        msg.reply_text("» ʏᴏᴜ ᴀʀᴇ ᴍɪꜱꜱɪɴɢ ʀɪɢʜᴛꜱ ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴘ ɪɴꜰᴏ!")
         return
 
     if msg.reply_to_message:
@@ -72,7 +72,7 @@ def setchatpic(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             pic_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("You can only set some photo as chat pic!")
+            msg.reply_text("» ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ꜱᴇᴛ ꜱᴏᴍᴇᴇ ᴘʜᴏᴛᴏ ᴀꜱ ᴄʜᴀᴛ ᴘɪᴄ!")
             return
         dlmsg = msg.reply_text("Just a sec...")
         tpic = context.bot.get_file(pic_id)
@@ -82,13 +82,13 @@ def setchatpic(update: Update, context: CallbackContext):
                 context.bot.set_chat_photo(int(chat.id), photo=chatp)
                 msg.reply_text("Successfully set new chatpic!")
         except BadRequest as excp:
-            msg.reply_text(f"Error! {excp.message}")
+            msg.reply_text(f"ᴇʀʀᴏʀ! {excp.message}")
         finally:
             dlmsg.delete()
             if os.path.isfile("gpic.png"):
                 os.remove("gpic.png")
     else:
-        msg.reply_text("Reply to some photo or file to set new chat pic!")
+        msg.reply_text("» ʀᴇᴘʟʏ ᴛᴏ ꜱᴏᴍᴇ ᴘʜᴏᴛᴏ ᴏʀ ꜰɪʟᴇ ᴛᴏ ꜱᴇᴛ ɴᴇᴡ ᴄʜᴀᴛ ᴘɪᴄ!")
         
 @bot_admin
 @user_admin
@@ -98,13 +98,13 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to delete group photo")
+        msg.reply_text("» ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛꜱ ᴛᴏ ᴅᴇʟᴇᴛᴇ ɢʀᴏᴜᴘ ᴘʜᴏᴛᴏ")
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
-        msg.reply_text("Successfully deleted chat's profile photo!")
+        msg.reply_text("» ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴄʜᴀᴛ'ꜱ ᴘʀᴏꜰɪʟᴇ ᴘʜᴏᴛᴏ!")
     except BadRequest as excp:
-        msg.reply_text(f"Error! {excp.message}.")
+        msg.reply_text(f"ᴇʀʀᴏʀ! {excp.message}.")
         return
     
 @bot_admin
@@ -115,21 +115,21 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!")
+        return msg.reply_text("» ʏᴏᴜ'ʀᴇ ᴍɪꜱꜱɪɴɢ ʀɪɢʜᴛꜱ ᴛᴏ ᴄʜᴀɴɢᴇ ᴄʜᴀᴛ ɪɴꜰᴏ!")
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
         desc = tesc[1]
     else:
-        return msg.reply_text("Setting empty description won't do anything!")
+        return msg.reply_text("» ꜱᴇᴛᴛɪɴɢ ᴇᴍᴘᴛʏ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ ᴡᴏɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ!")
     try:
         if len(desc) > 255:
-            return msg.reply_text("Description must needs to be under 255 characters!")
+            return msg.reply_text("» ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ ᴍᴜꜱᴛ ɴᴇᴇᴅꜱ ᴛᴏ ʙᴇ ᴜɴᴅᴇʀ 255 ᴄʜᴀʀᴀᴄᴛᴇʀꜱ!")
         context.bot.set_chat_description(chat.id, desc)
         msg.reply_text(f"Successfully updated chat description in {chat.title}!")
     except BadRequest as excp:
         msg.reply_text(f"Error! {excp.message}.")        
-        
+                   
 @bot_admin
 @user_admin
 def setchat_title(update: Update, context: CallbackContext):
