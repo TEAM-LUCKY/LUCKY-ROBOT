@@ -10,10 +10,10 @@ from EmikoRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 __mod_name__ = "Aɴᴛɪ-ɴꜱꜰᴡ​"
 
 __help__ = """
-*⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701*
+⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ɴꜱꜰᴡ 🔞 :
 
-*ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ*
+ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ
 
 /antinsfw <oɴ> : ᴇɴᴀʙʟᴇᴅ ᴀɴᴛɪɴsғᴡ ᴀɴᴛɪᴘᴏʀɴ sʏsᴛᴇᴍ. ʙᴏᴛ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ᴄᴏɴᴛᴀɪɴɪɴɢ ɪɴᴀᴘᴘʀᴏᴘʀɪᴀᴛᴇ ᴄᴏɴᴛᴇɴᴛ ᴅᴇғᴇᴀᴛ ᴏɴ
 
