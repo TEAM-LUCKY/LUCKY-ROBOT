@@ -311,7 +311,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701**\n".format(
+                "*⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701*\nʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʜᴇʟᴘ ꜰᴏʀ ᴛʜᴇ {}\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
