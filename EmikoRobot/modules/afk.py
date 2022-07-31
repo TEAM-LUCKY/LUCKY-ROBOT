@@ -169,6 +169,8 @@ __help__ = """
  
 **➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™**
 """
+
+
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
