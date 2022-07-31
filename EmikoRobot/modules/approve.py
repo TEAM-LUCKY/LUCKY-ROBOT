@@ -193,17 +193,26 @@ def unapproveall_btn(update: Update, context: CallbackContext):
 
 
 __help__ = """
-Sometimes, you might trust a user not to send unwanted content.
-Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.
+⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ 𝙰ᴘᴘʀᴏᴠᴇ ✔️ :
 
-That's what approvals are for - approve of trustworthy users to allow them to send
+ꜱᴏᴍᴇᴛɪᴍᴇꜱ, ʏᴏᴜ ᴍɪɢʜᴛ ᴛʀᴜꜱᴛ ᴀ ᴜꜱᴇʀ ɴᴏᴛ ᴛᴏ ꜱᴇɴᴅ ᴜɴᴡᴀɴᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ.
+ᴍᴀʏʙᴇ ɴᴏᴛ ᴇɴᴏᴜɢʜ ᴛᴏ ᴍᴀᴋᴇ ᴛʜᴇᴍ ᴀᴅᴍɪɴ, ʙᴜᴛ ʏᴏᴜ ᴍɪɢʜᴛ ʙᴇ ᴏᴋ ᴡɪᴛʜ ʟᴏᴄᴋꜱ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴀɴᴛɪғʟᴏᴏᴅ ɴᴏᴛ ᴀᴘᴘʟʏɪɴɢ ᴛᴏ ᴛʜᴇᴍ
 
-*Admin commands:*
-❂ /approval*:* Check a user's approval status in this chat.
-❂ /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
-❂ /unapprove*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
-❂ /approved*:* List all approved users.
-❂ /unapproveall*:* Unapprove *ALL* users in a chat. This cannot be undone.
+ᴛʜᴀᴛ ᴡʜᴀᴛ ᴀᴘᴘʀᴏᴠᴀʟꜱ ᴀʀᴇ ғᴏʀ - ᴀᴘᴘʀᴏᴠᴇ ᴏғ ᴛʀᴜꜱᴛᴡᴏʀᴛʜʏ ᴜꜱᴇʀꜱ ᴛᴏ ᴀʟʟᴏᴡ ᴛʜᴇᴍ ᴛᴏ ꜱᴇɴᴅ
+
+ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ:
+❂ /approval: ᴄʜᴇᴄᴋ ᴀ ᴜꜱᴇʀ ᴀᴘᴘʀᴏᴠᴀʟ ꜱᴛᴀᴛᴜꜱ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ.
+
+❂ /approve: ᴀᴘᴘʀᴏᴠᴇ ᴏғ ᴀ ᴜꜱᴇʀ. ʟᴏᴄᴋꜱ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴀɴᴛɪғʟᴏᴏᴅ ᴡᴏɴ'ᴛ ᴀᴘᴘʟʏ ᴛᴏ ᴛʜᴇᴍ ᴀɴʏᴍᴏʀᴇ.
+
+❂ /unapprove: ᴜɴᴀᴘᴘʀᴏᴠᴇ ᴏғ ᴀ ᴜꜱᴇʀ. ᴛʜᴇʏ ᴡɪʟʟ ɴᴏᴡ ʙᴇ ꜱᴜʙᴊᴇᴄᴛ to ʟᴏᴄᴋꜱ, blacklists, and antiflood again.
+
+❂ /approved: ʟɪꜱᴛ ᴀʟʟ ᴀᴘᴘʀᴏᴠᴇᴅ ᴜꜱᴇʀꜱ
+
+❂ /unapproveall: ᴜɴᴀᴘᴘʀᴏᴠᴇ ᴀʟʟ ᴜꜱᴇʀꜱ ɪɴ a ᴄʜᴀᴛ. ᴛʜɪꜱ ᴄᴀɴɴᴏᴛ ʙᴇ ᴜɴᴅᴏɴᴇ
+
+➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™.
 """
 
 APPROVE = DisableAbleCommandHandler("approve", approve, run_async=True)
