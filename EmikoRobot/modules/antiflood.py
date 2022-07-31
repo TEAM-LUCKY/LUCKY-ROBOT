@@ -426,6 +426,7 @@ Tʜɪs ᴡɪʟʟ ᴍᴜᴛᴇ ᴜsᴇʀs ɪғ ᴛʜᴇʏ sᴇɴᴅ ᴍᴏʀᴇ �
  1ᴡ = 1 ᴡᴇᴇᴋ
  
 ➥ /antichannel : ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇ ᴄʜᴀɴɴᴇʟ ᴍᴀssᴀɢᴇ
+"""
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
