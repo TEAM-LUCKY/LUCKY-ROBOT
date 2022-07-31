@@ -22,6 +22,7 @@ __help__ = """
 /scan : ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ/ᴅᴏᴄᴜᴍᴇɴᴛ/sᴛɪᴄᴋᴇʀ/ᴀɴɪᴍᴀᴛɪᴏɴ ᴛᴏ sᴄᴀɴ ɪᴛ
 
 ➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™
+"""
 
 
 async def get_file_id_from_message(message):
