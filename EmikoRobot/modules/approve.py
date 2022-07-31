@@ -193,7 +193,7 @@ def unapproveall_btn(update: Update, context: CallbackContext):
 
 
 __help__ = """
-**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)**
+**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701**
 **ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ 𝙰ᴘᴘʀᴏᴠᴇ ✔️** :
 
 ꜱᴏᴍᴇᴛɪᴍᴇꜱ, ʏᴏᴜ ᴍɪɢʜᴛ ᴛʀᴜꜱᴛ ᴀ ᴜꜱᴇʀ ɴᴏᴛ ᴛᴏ ꜱᴇɴᴅ ᴜɴᴡᴀɴᴛᴇᴅ ᴄᴏɴᴛᴇɴᴛ.
