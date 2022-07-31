@@ -146,7 +146,7 @@ def check_afk(update, context, user_id, fst_name, userc_id):
 
 AFK_HANDLER = DisableAbleCommandHandler("afk", afk, run_async=True)
 AFK_REGEX_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"^(?i)brb(.*)$"), afk, friendly="afk", run_async=True
+    Filters.regex(r"^(?i)bye(.*)$"), afk, friendly="afk", run_async=True
 )
 NO_AFK_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, no_longer_afk)
 AFK_REPLY_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, reply_afk)
@@ -159,7 +159,7 @@ dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 __mod_name__ = "Aꜰᴋ"
 
 __help__ = """
-**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)
+*⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ 𝙰ғᴋ ⚡** :
 
 ➥ /afk <ʀᴇᴀꜱᴏɴ> : ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs AFK (ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ). ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
@@ -167,7 +167,7 @@ __help__ = """
 ᴍᴏʀᴇ ᴛʏᴘᴇ
 ➥ bye  <ʀᴇᴀꜱᴏɴ>  : sᴀᴍᴇ ᴀs ᴀғᴋ
  
-**➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™**
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
 
