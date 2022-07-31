@@ -157,6 +157,7 @@ dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __mod_name__ = "Aꜰᴋ"
+
 __help__ = """
 **⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ 𝙰ғᴋ ⚡** :
