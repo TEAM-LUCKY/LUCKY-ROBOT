@@ -397,10 +397,9 @@ def __chat_settings__(chat_id, user_id):
         return "Not enforcing to flood control."
     return "Antiflood has been set to`{}`.".format(limit)
 
-__mod_name__ = "ᴀɴᴛɪ-ꜰʟᴏᴏᴅ"
+__mod_name__ = "Aɴᴛɪ-ꜰʟᴏᴏᴅ"
 
 __help__ = """
-*⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701*
 *ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ 𝙵ʟᴏᴏᴅ 😕 :*
 
 ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴛᴀᴋᴇ ᴀᴄᴛɪᴏɴ ᴏɴ ᴜsᴇʀs ᴛʜᴀᴛ sᴇɴᴅᴍᴏʀᴇᴛʜᴀɴ x ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʀᴏᴡ. Exᴄᴇᴇᴅɪɴɢ ᴛʜᴇ sᴇᴛ ғʟᴏᴏᴅ 
