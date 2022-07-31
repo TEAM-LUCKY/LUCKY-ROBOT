@@ -96,14 +96,14 @@ async def detect_nsfw(_, message):
     await message.reply_text(
         f"""
 **NSFW ɪᴍᴀɢᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ & ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!**
-**————————————————————**
+————————————————————
 **ᴜꜱᴇʀ:** {message.from_user.mention} [`{message.from_user.id}`]
 **ꜱᴀꜰᴇ:** `{results.neutral} %`
 **ᴘᴏʀɴ:** `{results.porn} %`
 **ᴀᴅᴜʟᴛ:** `{results.sexy} %`
 **ʜᴇɴᴛᴀɪ:** `{results.hentai} %`
 **ᴅʀᴀᴡɪɴɢꜱ:** `{results.drawings} %`
-**————————————————————**
+————————————————————
 __ᴜꜱᴇ `/antinsfw off` ᴛᴏ ᴅɪꜱᴀʙʟᴇ ᴛʜɪꜱ.__
 """
     )
