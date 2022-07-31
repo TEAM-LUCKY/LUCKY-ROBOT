@@ -7,7 +7,21 @@ from EmikoRobot.utils.errors import capture_err
 from EmikoRobot.utils.permissions import adminsOnly
 from EmikoRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 
-__mod_name__ = "ᴀɴᴛɪ-ɴꜱꜰᴡ​"
+__mod_name__ = "Aɴᴛɪ-ɴꜱꜰᴡ​"
+
+__help__ = """
+**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701**
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ɴꜱꜰᴡ 🔞 :
+
+**ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ**
+
+/antinsfw <oɴ> : ᴇɴᴀʙʟᴇᴅ ᴀɴᴛɪɴsғᴡ ᴀɴᴛɪᴘᴏʀɴ sʏsᴛᴇᴍ. ʙᴏᴛ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ᴄᴏɴᴛᴀɪɴɪɴɢ ɪɴᴀᴘᴘʀᴏᴘʀɪᴀᴛᴇ ᴄᴏɴᴛᴇɴᴛ ᴅᴇғᴇᴀᴛ ᴏɴ
+
+/antinsfw <ᴏғғ> : sᴀʟᴇ ᴏғғ ʜɪ ǫ ᴋᴀʀ ɴᴀ ʙᴇ ᴏɴ ᴋᴀʀ ᴅᴇ
+
+/scan : ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ/ᴅᴏᴄᴜᴍᴇɴᴛ/sᴛɪᴄᴋᴇʀ/ᴀɴɪᴍᴀᴛɪᴏɴ ᴛᴏ sᴄᴀɴ ɪᴛ
+
+➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™
 
 
 async def get_file_id_from_message(message):
