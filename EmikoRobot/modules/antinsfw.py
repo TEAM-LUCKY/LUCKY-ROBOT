@@ -10,10 +10,10 @@ from EmikoRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 __mod_name__ = "Aɴᴛɪ-ɴꜱꜰᴡ​"
 
 __help__ = """
-**⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701**
+*⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © @Cute_Boy701*
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ɴꜱꜰᴡ 🔞 :
 
-**ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ**
+*ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ*
 
 /antinsfw <oɴ> : ᴇɴᴀʙʟᴇᴅ ᴀɴᴛɪɴsғᴡ ᴀɴᴛɪᴘᴏʀɴ sʏsᴛᴇᴍ. ʙᴏᴛ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴍᴇssᴀɢᴇs ᴄᴏɴᴛᴀɪɴɪɴɢ ɪɴᴀᴘᴘʀᴏᴘʀɪᴀᴛᴇ ᴄᴏɴᴛᴇɴᴛ ᴅᴇғᴇᴀᴛ ᴏɴ
 
@@ -95,8 +95,8 @@ async def detect_nsfw(_, message):
         return
     await message.reply_text(
         f"""
-**NSFW ɪᴍᴀɢᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ & ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!
-————————————————————**
+**NSFW ɪᴍᴀɢᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ & ᴅᴇʟᴇᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!**
+**————————————————————**
 **ᴜꜱᴇʀ:** {message.from_user.mention} [`{message.from_user.id}`]
 **ꜱᴀꜰᴇ:** `{results.neutral} %`
 **ᴘᴏʀɴ:** `{results.porn} %`
