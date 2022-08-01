@@ -208,14 +208,18 @@ async def logo_(event):
             os.remove(font_)
 
 
-__mod_name__ = "ʟᴏɢᴏꜱ"
+__mod_name__ = "Lᴏɢᴏꜱ 🍧"
 
-__help__ = """ This is help menu for logomaker
+__help__ = """ *ᴛʜɪꜱ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ғᴏʀ ʟᴏɢᴏᴍᴀᴋᴇʀ*
 
-❂ /logo <text/name> - Create a logo with random view.
-❂ /wlogo <text/name> - Create a logo with wide view only.
+•➥ /logo <text/name> - ᴄʀᴇᴀᴛᴇ a ʟᴏɢᴏ ᴡɪᴛʜ ʀᴀɴᴅᴏᴍ ᴠɪᴇᴡ.
 
- Image Editor :
+•➥ /wlogo <text/name> - ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ ᴡɪᴛʜ ᴡɪᴅᴇ ᴠɪᴇᴡ ᴏɴʟʏ.
 
-❂  /edit <reply photo> - to edit image.
+•➥ /wallpaper - ɢᴇᴛ ᴀ ᴡᴀʟʟᴘᴀᴘᴇʀ 
+
+ *ɪᴍᴀɢᴇ ᴇᴅɪᴛᴏʀ:*
+•➥  /edit <reply photo> - ᴛᴏ ᴇᴅɪᴛ ɪᴍᴀɢᴇ.
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
