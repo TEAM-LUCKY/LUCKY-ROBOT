@@ -1235,22 +1235,37 @@ def __chat_settings__(chat_id, _):
 
 
 __help__ = """
-*Admins only:*
-❂ /welcome <on/off>*:* enable/disable welcome messages.
-❂ /welcome*:* shows current welcome settings.
-❂ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
-❂ /goodbye*:* same usage and args as `/welcome`.
-❂ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
-❂ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
-❂ /resetwelcome*:* reset to the default welcome message.
-❂ /resetgoodbye*:* reset to the default goodbye message.
-❂ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
-❂ /welcomemutehelp*:* gives information about welcome mutes.
-❂ /cleanservice <on/off*:* deletes telegrams welcome/left service messages.
- *Example:*
-user joined chat, user left chat.
-*Welcome markdown:*
-❂ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+*ᴀᴅᴍɪɴs ᴏɴʟʏ:*
+
+❂ /welcome <ᴏɴ/ᴏғғ>: ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs.
+
+❂ /welcome : sʜᴏᴡs ᴄᴜʀʀᴇɴᴛ ᴡᴇʟᴄᴏᴍᴇ sᴇᴛᴛɪɴɢs.
+
+❂ /welcome noformat : sʜᴏᴡs ᴄᴜʀʀᴇɴᴛ ᴡᴇʟᴄᴏᴍᴇ sᴇᴛᴛɪɴɢs, ᴡɪᴛʜᴏᴜᴛ ᴛʜᴇ ғᴏʀᴍᴀᴛᴛɪɴɢ - ᴜsᴇғᴜʟ ᴛᴏ ʀᴇᴄʏᴄʟᴇ ʏᴏᴜʀ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs!
+
+❂ /goodbye : sᴀᴍᴇ ᴜsᴀɢᴇ ᴀɴᴅ ᴀʀɢs ᴀs /ᴡᴇʟᴄᴏᴍᴇ.
+
+❂ /setwelcome  <sᴏᴍᴇᴛᴇxᴛ>: sᴇᴛ ᴀ ᴄᴜsᴛᴏᴍ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ. ɪғ ᴜsᴇᴅ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴍᴇᴅɪᴀ, ᴜsᴇs ᴛʜᴀᴛ ᴍᴇᴅɪᴀ.
+
+❂ /setgoodbye <sᴏᴍᴇᴛᴇxᴛ>: sᴇᴛ ᴀ ᴄᴜsᴛᴏᴍ ɢᴏᴏᴅʙʏᴇ ᴍᴇssᴀɢᴇ. ɪғ ᴜsᴇᴅ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴍᴇᴅɪᴀ, ᴜsᴇs ᴛʜᴀᴛ ᴍᴇᴅɪᴀ.
+
+❂ /resetwelcome : ʀᴇsᴇᴛ ᴛᴏ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ.
+
+❂ /resetgoodbye : ʀᴇsᴇᴛ ᴛᴏ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ɢᴏᴏᴅʙʏᴇ ᴍᴇssᴀɢᴇ.
+
+❂ /cleanwelcome  <ᴏɴ/ᴏғғ>: ᴏɴ ɴᴇᴡ ᴍᴇᴍʙᴇʀ, ᴛʀʏ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜs ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀᴠᴏɪᴅ sᴘᴀᴍᴍɪɴɢ ᴛʜᴇ ᴄʜᴀᴛ
+
+❂ /welcomemutehelp : ɢɪᴠᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴡᴇʟᴄᴏᴍᴇ ᴍᴜᴛᴇs.
+
+❂ /cleanservice <ᴏɴ/ᴏғғ: ᴅᴇʟᴇᴛᴇs ᴛᴇʟᴇɢʀᴀᴍs ᴡᴇʟᴄᴏᴍᴇ/ʟᴇғᴛ sᴇʀᴠɪᴄᴇ ᴍᴇssᴀɢᴇs.
+
+ ᴇxᴀᴍᴘʟᴇ:
+ᴜsᴇʀ ᴊᴏɪɴᴇᴅ ᴄʜᴀᴛ, ᴜsᴇʀ ʟᴇғᴛ ᴄʜᴀᴛ
+
+*ᴡᴇʟᴄᴏᴍᴇ ᴍᴀʀᴋᴅᴏᴡɴ:*
+❂ /welcomehelp: ᴠɪᴇᴡ ᴍᴏʀᴇ ғᴏʀᴍᴀᴛᴛɪɴɢ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ғᴏʀ ᴄᴜsᴛᴏᴍ ᴡᴇʟᴄᴏᴍᴇ/ɢᴏᴏᴅʙʏᴇ ᴍᴇssᴀɢᴇs.
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
 NEW_MEM_HANDLER = MessageHandler(
@@ -1313,7 +1328,7 @@ dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 dispatcher.add_handler(CAPTCHA_BUTTON_VERIFY_HANDLER)
 
-__mod_name__ = "ᴡᴇʟᴄᴏᴍᴇ"
+__mod_name__ = "Wᴇʟᴄᴏᴍᴇ ❣️"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
