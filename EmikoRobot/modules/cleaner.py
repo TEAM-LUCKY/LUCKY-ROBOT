@@ -215,17 +215,15 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
 
 
 __help__ = """
- Blue text cleaner removed any made up commands that people send in your chat.
+ *ʙʟᴜᴇ ᴛᴇxᴛ ᴄʟᴇᴀɴᴇʀ ʀᴇᴍᴏᴠᴇᴅ ᴀɴʏ ᴍᴀᴅᴇ ᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴘᴇᴏᴘʟᴇ ꜱᴇɴᴅ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.*
+»/cleanblue <ᴏɴ/ᴏꜰꜰ/ʏᴇꜱ/ɴᴏ>: ᴄʟᴇᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀғᴛᴇʀ ꜱᴇɴᴅɪɴɢ
+»/ignoreblue <ᴡᴏʀᴅ>: ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
+»/unignoreblue <ᴡᴏʀᴅ>: ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
+»/listblue: ʟɪꜱᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴡʜɪᴛᴇʟɪꜱᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅꜱ
 
-❂ /cleanblue <on/off/yes/no>*:* clean commands after sending
-❂ /ignoreblue <word>*:* prevent auto cleaning of the command
-❂ /unignoreblue <word>*:* remove prevent auto cleaning of the command
-❂ /listblue*:* list currently whitelisted commands
-
- *Following are Disasters only commands, admins cannot use these:*
-
-❂ /gignoreblue <word>*:* globally ignorea bluetext cleaning of saved word across Saitama.
-❂ /ungignoreblue <word>*:* remove said command from global cleaning list
+ *ғᴏʟʟᴏᴡɪɴɢ ᴀʀᴇ ᴅɪꜱᴀꜱᴛᴇʀꜱ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅꜱ, ᴀᴅᴍɪɴꜱ 𝚌𝚊𝚗𝚗𝚘𝚝 ᴜꜱᴇ ᴛʜᴇꜱᴇ:*
+»/gignoreblue <ᴡᴏʀᴅ>: ɢʟᴏʙᴀʟʟʏ ɪɢɴᴏʀᴇᴀ ʙʟᴜᴇᴛᴇxᴛ ᴄʟᴇᴀɴɪɴɢ ᴏғ ꜱᴀᴠᴇᴅ ᴡᴏʀᴅ ᴀᴄʀᴏꜱꜱ ꜱᴀɪᴛᴀᴍᴀ.
+»/ungignoreblue <ᴡᴏʀᴅ>: ʀᴇᴍᴏᴠᴇ ꜱᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғʀᴏᴍ ɢʟᴏʙᴀʟ ᴄʟᴇᴀɴɪɴɢ ʟɪꜱᴛ
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler(
