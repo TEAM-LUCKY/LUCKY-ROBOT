@@ -279,15 +279,21 @@ async def apk(e):
 __mod_name__ = "ɢᴏᴏɢʟᴇ"
 
 __help__ = """
-❂ /google <query>*:* Perform a google search
-❂ /image <query>*:* Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
-❂ /app <appname>*:* Searches for an app in Play Store and returns its details.
-❂ /reverse: Does a reverse image search of the media which it was replied to.
-❂ /gps <location>*:* Get gps location.
-❂ /github <username>*:* Get information about a GitHub user.
-❂ /country <country name>*:* Gathering info about given country
-❂ /imdb <Movie name>*:* Get full info about a movie with imdb.com
-❂ Emiko <query>*:* Emiko answers the query
+➻ /google <Qᴜᴇʀʏ>*:* ᴘᴇʀꜰᴏʀᴍ ᴀ ɢᴏᴏɢʟᴇ ꜱᴇᴀʀᴄʜ.
 
-  💡Ex: `Emiko where is Japan?`
+➻ /image <Qᴜᴇʀʏ>*:* ꜱᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ ꜰᴏʀ ɪᴍᴀɢᴇꜱ ᴀɴᴅ ʀᴇᴛᴜʀɴ\nꜰᴏʀ ɢʀᴇᴀᴛᴏʀ ɴᴏ. ᴏꜰ ʀᴇꜱᴜʟᴛꜱ ʟɪᴍ.
+
+➻ /app <ᴀᴘᴘɴᴀᴍᴇ>*:* ꜱᴇᴀʀᴄʜ ꜰᴏʀ ᴀɴ ᴀᴘᴘ ɪɴ ᴘʟᴀʏꜱᴛᴏʀᴇ ᴀɴᴅ ʀᴇᴛᴜʀɴꜱ ɪᴛꜱ ᴅᴇᴛᴀɪʟꜱ.
+
+➻ /reverse: ᴅᴏᴇꜱ ᴀ ʀᴇᴠᴇʀꜱᴇ ɪᴍᴀɢᴇ ꜱᴇᴀʀᴄʜ ᴏꜰ ᴛʜᴇ ᴍᴇᴅɪᴀ ᴡʜɪᴄʜ ɪᴛ ᴡᴀꜱ ʀᴇᴘʟɪᴇᴅ ᴛᴏ.
+
+➻ /gps <ʟᴏᴄᴀᴛɪᴏɴ>*:* ɢᴇᴛ ɢᴘꜱ ʟᴏᴄᴀᴛɪᴏɴ.
+
+➻ /github <ᴜꜱᴇʀɴᴀᴍᴇ>*:* ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ɢɪᴛʜɪʙ ᴜꜱᴇʀ.
+
+➻ /country <ᴄᴏᴜɴᴛʀʏ ɴᴀᴍᴇ>*:* Gathering info about given country
+
+➻ Emiko <Qᴜᴇʀʏ>*:* ᴇᴍɪᴋᴏᴏ ᴀɴꜱᴡᴇʀꜱ ᴛʜᴇ Qᴜᴇʀʏ
+
+ *» Ex: ᴇᴍɪᴋᴏ ᴡʜᴇʀᴇ ɪꜱ ᴊᴀᴀᴘᴀɴ ?*
 """
