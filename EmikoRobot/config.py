@@ -27,7 +27,7 @@ class Config(object):
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "postgres://uizkxoqk:clkBCgdGMsiElnRW_3_kqLnqaGDCbkje@fanny.db.elephantsql.com/uizkxoqk"  # needed for any database modules
-    MONGO_DB_URI = get_str_key("MONGO_DB_URI", "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority")  # needed for any database modules
+    MONGO_DB_URI = "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
     ARQ_API_URL = "https://arq.hamker.in"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
