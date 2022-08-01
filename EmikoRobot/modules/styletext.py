@@ -473,7 +473,27 @@ def lined(update, context):
     else:
         message.reply_text(string)
 
-__mod_name__ = "Styletext"
+__mod_name__ = "ᴛᴇxᴛ 🔥"
+
+__help__ = """
+•➥ /weebify <text>: 山乇乇乃工下丫 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /bubble <text>: ⓑⓤⓑⓑⓛⓔ ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /fbubble <text>: 🅕🅑🅤🅑🅑🅛🅔 ʏᴏᴜʀ text!
+
+•➥ /square <text>: 🅂🅀🅄🄰🅁🄴 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /fsquare <text>: 🅵🆂🆀🆄🅰🆁🅴 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /blue <text>: 🇧 🇱 🇺 🇪 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /latin <text>: 𝓁𝒶𝓉𝒾𝓃 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+•➥ /lined <text>: 𝕝𝕚𝕟𝕖𝕕 ʏᴏᴜʀ ᴛᴇxᴛ!
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
+"""
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble, run_async=True)
