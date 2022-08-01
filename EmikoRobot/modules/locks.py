@@ -561,7 +561,7 @@ Locking ᴜʀʟs ᴡɪʟʟ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇssᴀɢ�
 *➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
-__mod_name__ = "ʟᴏᴄᴋꜱ"
+__mod_name__ = "Lᴏᴄᴋꜱ 🔐"
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
 LOCK_HANDLER = CommandHandler(
