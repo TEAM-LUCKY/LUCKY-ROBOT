@@ -1,6 +1,5 @@
 import json
 from os import getenv
-import get_int_key, get_str_key
 
 def get_user_list(config, key):
     with open("{}/EmikoRobot/{}".format(os.getcwd(), config), "r") as json_file:
