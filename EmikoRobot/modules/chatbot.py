@@ -433,10 +433,13 @@ async def inuka(client, message):
 
 
 __help__ = """
-❂ Emiko AI is the only ai system which can detect & reply upto 200 language's
+*❂ ᴏɴʟʏ ᴀɪ ꜱʏꜱᴛᴇᴍ ᴡʜɪᴄʜ ᴄᴀɴ ᴅᴇᴛᴇᴄᴛ & ʀᴇᴘʟʏ ᴜᴘᴛᴏ 200 ʟᴀɴɢᴜᴀɢᴇꜱ*
 
-❂ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
-❂ /chatbot EN : Enables English only chatbot.
+❂ /chatbot : sʜᴏᴡ ᴀ ᴘᴀɴᴇʟ , ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ
+
+ɴᴏᴛᴇ : ᴏɴᴇ ᴛɪᴍᴇ ᴏɴ ᴏɴᴇ
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
-__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
+__mod_name__ = "Cʜᴀᴛʙᴏᴛ 🤙🏻"
