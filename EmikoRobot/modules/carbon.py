@@ -38,7 +38,7 @@ async def repo(_, message):
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{s}`
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀꜱɪᴏɴ :** `{z}`
 
-**Create your own with click button bellow.**
+**ᴄʀᴇᴀᴛ ʏᴏᴜʀ ᴏᴡɴ ᴡɪᴛʜ ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
