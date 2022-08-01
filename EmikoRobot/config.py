@@ -1,15 +1,13 @@
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json
 import os
-    def get_user_list(config, key):
+
+def get_user_list(config, key):
     with open("{}/EmikoRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
+
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
-
     LOGGER = True
-    # REQUIRED
-    # Login to https://my.telegram.org and fill in these slots with the details given by it
 
     API_ID = 8289355  # integer value, dont use ""
     API_HASH = "55822f9d50c5b011177539545f760852"
