@@ -552,21 +552,32 @@ def kayo(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ──「 Anime search 」──                           
-❂ /anime <anime>: returns information about the anime.
-❂ /whatanime: returns source of anime when replied to photo or gif.                                                          
-❂ /character <character>: returns information about the character.
-❂ /manga <manga>: returns information about the manga.
-❂ /user <user>: returns information about a MyAnimeList user.
-❂ /upcoming: returns a list of new anime in the upcoming seasons.
-❂ /airing <anime>: returns anime airing info.
-❂ /whatanime <anime>: reply to gif or photo.
-❂ /kaizoku <anime>: search an anime on animekaizoku.com
-❂ /kayo <anime>: search an anime on animekayo.com
+ *──「 ᴀɴɪᴍᴇ ꜱᴇᴀʀᴄʜ 」──*                          
+❂ /anime <ᴀɴɪᴍᴇ>: ʀᴇᴛᴜʀɴꜱ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴀɴɪᴍᴇ.
 
- 「 Anime Quotes 」
-❂ /animequotes: for anime quotes randomly as photos.
-❂ /quote: send quotes randomly as text
+❂ /whatanime: ʀᴇᴛᴜʀɴꜱ ꜱᴏᴜʀᴄᴇ ᴏғ ᴀɴɪᴍᴇ ᴡʜᴇɴ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴘʜᴏᴛᴏ ᴏʀ ɢɪғ.                                                    
+❂ /character <ᴄʜᴀʀᴀᴄᴛᴇʀ>: ʀᴇᴛᴜʀɴꜱ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ character.
+
+❂ /manga <ᴍᴀɴɢᴀ>: ʀᴇᴛᴜʀɴꜱ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴍᴀɴɢᴀ.
+
+❂ /user <ᴜꜱᴇʀ>: ʀᴇᴛᴜʀɴꜱ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ a ᴍʏᴀɴɪᴍᴇʟɪꜱᴛ ᴜꜱᴇʀ.
+
+❂ /upcoming: ʀᴇᴛᴜʀɴꜱ a ʟɪꜱᴛ of ɴᴇᴡ ᴀɴɪᴍᴇ in ᴛʜᴇ ᴜᴘᴄᴏᴍɪɴɢ ꜱᴇᴀꜱᴏɴꜱ.
+
+❂ /airing <ᴀɴɪᴍᴇ>: ʀᴇᴛᴜʀɴꜱ ᴀɴɪᴍᴇ ᴀɪʀɪɴɢ ɪɴғᴏ.
+
+❂ /whatanime <ᴀɴɪᴍᴇ>: ʀᴇᴘʟʏ ᴛᴏ ɢɪғ ᴏʀ ᴘʜᴏᴛᴏ.
+
+❂ /kaizoku <ᴀɴɪᴍᴇ>: ꜱᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ᴏɴ ᴀɴɪᴍᴇᴋᴀɪᴢᴏᴋᴜ.ᴄᴏᴍ
+
+❂ /kayo <ᴀɴɪᴍᴇ>: ꜱᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ᴏɴ ᴀɴɪᴍᴇᴋᴀʏᴏ.ᴄᴏᴍ
+
+ *ᴀɴɪᴍᴇ ϙᴜᴏᴛᴇꜱ*
+❂ /animequotes: ғᴏʀ ᴀɴɪᴍᴇ ϙᴜᴏᴛᴇꜱ ʀᴀɴᴅᴏᴍʟʏ ᴀꜱ ᴘʜᴏᴛᴏꜱ.
+
+❂ /quote: ꜱᴇɴᴅ ϙᴜᴏᴛᴇꜱ ʀᴀɴᴅᴏᴍʟʏ ᴀꜱ ᴛᴇxᴛ
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
  """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
