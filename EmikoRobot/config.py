@@ -52,7 +52,7 @@ class Config(object):
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = get_user_list("elevated_users.json", "1962673406")
     WOLVES = get_user_list("elevated_users.json", "1962673406")
-    DONATION_LINK = https://t.me/oye_golgappu  # EG, paypal
+    DONATION_LINK = "https://t.me/oye_golgappu"  # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
