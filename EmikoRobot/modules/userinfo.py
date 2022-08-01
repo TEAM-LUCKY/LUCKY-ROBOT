@@ -539,37 +539,31 @@ def __user_info__(user_id):
 
 
 __help__ = """
-*ID:*
-❂ /id*:* get the current group id. If used by replying to a message, gets that user's id.
-❂ /gifid*:* reply to a gif to me to tell you its file ID.
+*ɪᴅ:*
+
+➻/id: ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ ɪᴅ. ɪғ ᴜꜱᴇᴅ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴛᴏ a ᴍᴇꜱꜱᴀɢᴇ, ɢᴇᴛꜱ ᴛʜᴀᴛ ᴜꜱᴇʀ ɪᴅ.
+➻/gifid: ʀᴇᴘʟʏ ᴛᴏ ᴀ ɢɪғ ᴛᴏ ᴍᴇ ᴛᴏ ᴛᴇʟʟ ʏᴏᴜ ɪᴛꜱ ғɪʟᴇ ɪᴅ.
+➻/ginfo: ɢᴇᴛ ᴄʜᴀᴛ ɪɴғᴏ 
  
-*Self addded information:* 
-❂ /setme <text>*:* will set your info
-❂ /me*:* will get your or another user's info.
-Examples:
-❂ /setme I am a wolf.
-❂ /me @username(defaults to yours if no user specified)
+*ꜱᴇʟғ ᴀᴅᴅᴅᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ:* 
+➻/setme <text>: ᴡɪʟʟ ꜱᴇᴛ ʏᴏᴜʀ ɪɴғᴏ
+➻/me: ᴡɪʟʟ ɢᴇᴛ ʏᴏᴜʀ ᴏʀ ᴀɴᴏᴛʜᴇʀ ᴜꜱᴇʀ ɪɴғᴏ.
+*ᴇxᴀᴍᴘʟᴇꜱ:*
+➻/setme ɪ ᴀᴍ ᴀ ᴡᴏʟғ.
+➻/me @username(ᴅᴇғᴀᴜʟᴛꜱ ᴛᴏ ʏᴏᴜʀꜱ ɪғ ɴᴏ ᴜꜱᴇʀ ꜱᴘᴇᴄɪғɪᴇᴅ)
  
-*Information others add on you:* 
-❂ /bio*:* will get your or another user's bio. This cannot be set by yourself.
-❂ /setbio <text>*:* while replying, will save another user's bio 
-Examples:
-❂ /bio @username(defaults to yours if not specified).
-❂ /setbio This user is a wolf (reply to the user)
+*ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏᴛʜᴇʀꜱ ᴀᴅᴅ ᴏɴ ʏᴏᴜ:* 
+➻/bio: ᴡɪʟʟ ɢᴇᴛ your ᴏʀ ᴀɴᴏᴛʜᴇʀ ᴜꜱᴇʀ ʙɪᴏ. ᴛʜɪꜱ ᴄᴀɴɴᴏᴛ ʙᴇ ꜱᴇᴛ ʙʏ ʏᴏᴜʀꜱᴇʟғ.
+➻/setbio <text>: ᴡʜɪʟᴇ ʀᴇᴘʟʏɪɴɢ, ᴡɪʟʟ ꜱᴀᴠᴇ ᴀɴᴏᴛʜᴇʀ user ʙɪᴏ 
+*ᴇxᴀᴍᴘʟᴇꜱ:*
+➻/bio @username(ᴅᴇғᴀᴜʟᴛꜱ ᴛᴏ ʏᴏᴜʀꜱ ɪғ ɴᴏᴛ ꜱᴘᴇᴄɪғɪᴇᴅ).
+➻/setbio ᴛʜɪꜱ ᴜꜱᴇʀ ɪꜱ ᴀ ᴡᴏʟғ (ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴜꜱᴇʀ)
  
-*Overall Information about you:*
-❂ /info*:* get information about a user. 
+*ᴏᴠᴇʀᴀʟʟ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ʏᴏᴜ:*
+➻/info: ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ. 
  
-*json Detailed info:*
-❂ /json*:* Get Detailed info about any message.
- 
-*AFk:*
-When marked as AFK, any mentions will be replied to with a message stating that you're not available!
-❂ /afk <reason>*:* Mark yourself as AFK.
-  - brb <reason>: Same as the afk command, but not a command. 
-  
-*What is that health thingy?*
- Come and see [HP System explained](https://t.me/KennedyProject/44)
+*ᴊꜱᴏɴ ᴅᴇᴛᴀɪʟᴇᴅ ɪɴꜰᴏ:*
+➻/json: ɢᴇᴛ ᴅᴇᴛᴀɪʟᴇᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴀɴʏ ᴍᴇꜱꜱᴀɢᴇ.
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
@@ -592,7 +586,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "ɪɴꜰᴏ & ᴀꜰᴋ"
+__mod_name__ = "Iɴꜰᴏ 📜"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
