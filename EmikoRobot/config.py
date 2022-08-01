@@ -4,8 +4,7 @@ import os
 
 def get_user_list(config, key):
     with open("{}/EmikoRobot/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
+        
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
