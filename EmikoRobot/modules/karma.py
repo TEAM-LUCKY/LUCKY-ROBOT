@@ -3,7 +3,6 @@ from pyrogram import filters
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
-from EmikoRobot import pbot as app, BOT_ID
 from EmikoRobot.utils.errors import capture_err
 from EmikoRobot.utils.permissions import adminsOnly
 from EmikoRobot.ex_plugins.dbfunctions import (
