@@ -547,30 +547,36 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-❂ /get <notename>*:* get the note with this notename
-❂ #<notename>*:* same as /get
-❂ /notes or /saved*:* list all saved notes in this chat
-❂ /number *:* Will pull the note of that number in the list
-If you would like to retrieve the contents of a note without any formatting, use `/get <notename> noformat`. This can \
-be useful when updating a current note
+•➥ /get <notename>: ɢᴇᴛ ᴛʜᴇ ɴᴏᴛᴇ ᴡɪᴛʜ this ɴᴏᴛᴇɴᴀᴍᴇ
 
-*Admins only:*
-❂ /save <notename> <notedata>*:* saves notedata as a note with name notename
-A button can be added to a note by using standard markdown link syntax - the link should just be prepended with a \
-`buttonurl:` section, as such: `[somelink](buttonurl:example.com)`. Check `/markdownhelp` for more info
-❂ /save <notename>*:* save the replied message as a note with name notename
- Separate diff replies by `%%%` to get random notes
- *Example:*
- `/save notename
- Reply 1
- %%%
- Reply 2
- %%%
- Reply 3`
-❂ /clear <notename>*:* clear note with this name
-❂ /removeallnotes*:* removes all notes from the group
+•➥ #<notename>*:* same as /get
 
- *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
+•➥ /notes or /saved: ʟɪsᴛ ᴀʟʟ sᴀᴠᴇᴅ ɴᴏᴛᴇs ɪɴ ᴛʜɪs ᴄʜᴀᴛ
+
+•➥ /number : ᴡɪʟʟ ᴘᴜʟʟ ᴛʜᴇ ɴᴏᴛᴇ ᴏғ ᴛʜᴀᴛ ɴᴜᴍʙᴇʀ ɪɴ ᴛʜᴇ ʟɪsᴛ
+
+ɪғ ʏᴏᴜ ᴡᴏᴜʟᴅ ʟɪᴋᴇ ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛs ᴏғ ᴀ ɴᴏᴛᴇ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ғᴏʀᴍᴀᴛᴛɪɴɢ, ᴜsᴇ /get <notename> ɴᴏғᴏʀᴍᴀᴛ. ᴛʜɪs ᴄᴀɴ ʙᴇ ᴜsᴇғᴜʟ ᴡʜᴇɴ ᴜᴘᴅᴀᴛɪɴɢ ᴀ ᴄᴜʀʀᴇɴᴛ ɴᴏᴛᴇ
+
+*ᴀᴅᴍɪɴꜱ ᴏɴʟʏ:*
+•➥ /save <notename> <notedata>: ꜱᴀᴠᴇꜱ ɴᴏᴛᴇᴅᴀᴛᴀ ᴀꜱ ᴀ ɴᴏᴛᴇ ᴡɪᴛʜ ɴᴀᴍᴇ ɴᴏᴛᴇɴᴀᴍᴇ
+
+A ʙᴜᴛᴛᴏɴ ᴄᴀɴ ʙᴇ ᴀᴅᴅᴇᴅ ᴛᴏ ᴀ ɴᴏᴛᴇ ʙʏ ᴜꜱɪɴɢ ꜱᴛᴀɴᴅᴀʀᴅ ᴍᴀʀᴋᴅᴏᴡɴ ʟɪɴᴋ ꜱʏɴᴛᴀx - ᴛʜᴇ ʟɪɴᴋ ꜱʜᴏᴜʟᴅ ᴊᴜꜱᴛ ʙᴇ ᴘʀᴇᴘᴇɴᴅᴇᴅ ᴡɪᴛʜ ᴀ
+ buttonurl: ꜱᴇᴄᴛɪᴏɴ, ᴀꜱ ꜱᴜᴄʜ: [somelink](buttonurl:example.com). ᴄʜᴇᴄᴋ /ᴍᴀʀᴋᴅᴏᴡɴʜᴇʟᴘ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ
+
+•➥ /save <notename>: ꜱᴀᴠᴇ ᴛʜᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇꜱꜱᴀɢᴇ ᴀꜱ ᴀ ɴᴏᴛᴇ ᴡɪᴛʜ ɴᴀᴍᴇ ɴᴏᴛᴇɴᴀᴍᴇ
+
+ ꜱᴇᴘᴀʀᴀᴛᴇ ᴅɪғғ ʀᴇᴘʟɪᴇꜱ ʙʏ %%% ᴛᴏ ɢᴇᴛ ʀᴀɴᴅᴏᴍ ɴᴏᴛᴇꜱ
+ 
+ *ᴇxᴀᴍᴘʟᴇ:*
+ /save notename
+ 
+•➥ /clear <notename>: ᴄʟᴇᴀʀ ɴᴏᴛᴇ ᴡɪᴛʜ ᴛʜɪꜱ ɴᴀᴍᴇ
+
+•➥ /removeallnotes: ʀᴇᴍᴏᴠᴇꜱ ᴀʟʟ ɴᴏᴛᴇꜱ ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ
+
+ ɴᴏᴛᴇ: ɴᴏᴛᴇ ɴᴀᴍᴇꜱ ᴀʀᴇ ᴄᴀꜱᴇ--ꜱᴇɴꜱɪᴛɪᴠᴇ, ᴀɴᴅ ᴛʜᴇʏ ᴀʀᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴄᴏɴᴠᴇʀᴛᴇᴅ ᴛᴏ ʟᴏᴡᴇʀᴄᴀꜱᴇ ʙᴇғᴏʀᴇ ɢᴇᴛᴛɪɴɢ ꜱᴀᴠᴇᴅ.
+ 
+ *➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
 __mod_name__ = "Nᴏᴛᴇꜱ ✍🏻"
