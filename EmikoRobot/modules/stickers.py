@@ -23,7 +23,7 @@ def stickerid(update: Update, context: CallbackContext):
     msg = update.effective_message
     if msg.reply_to_message and msg.reply_to_message.sticker:
         update.effective_message.reply_text(
-            "Hello "
+            "нєℓℓο "
             + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
             + ", The sticker id you are replying is :\n <code>"
             + escape(msg.reply_to_message.sticker.file_id)
@@ -32,7 +32,7 @@ def stickerid(update: Update, context: CallbackContext):
         )
     else:
         update.effective_message.reply_text(
-            "Hello "
+            "нєℓℓο "
             + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
             + ", Please reply to sticker message to get id sticker",
             parse_mode=ParseMode.HTML,
@@ -81,7 +81,7 @@ def kang(update, context):
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("Yea, I can't kang that.")
+            msg.reply_text("γєα ι ϲαиτ καиg τнατ.")
 
         kang_file = context.bot.get_file(file_id)
         if not is_animated:
@@ -94,7 +94,7 @@ def kang(update, context):
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
             sticker_emoji = msg.reply_to_message.sticker.emoji
         else:
-            sticker_emoji = "🙂"
+            sticker_emoji = "😩"
 
         if not is_animated:
             try:
@@ -129,14 +129,15 @@ def kang(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="View Pack", url=f"t.me/addstickers/{packname}"
+                                text="ᴠɪᴇᴡ ᴘᴀᴄᴋ", url=f"t.me/addstickers/{packname}"
                             )
                         ]
                     ]
                 )
                 msg.reply_text(
-                    f"<b>Your sticker has been added!</b>"
-                    f"\nEmoji Is : {sticker_emoji}",
+                    f"<b>ʏᴏᴜʀ ꜱᴛɪᴄᴋᴇʀ ʜᴀꜱ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ!</b>"
+                    f"\nғᴏʀ ғᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ .ʀᴇᴍᴏᴠᴇ ʏᴏᴜʀ ᴘᴀᴄᴋ.& ᴀᴅᴅ ᴀɢᴀɪɴ
+                    f"\n<b>ᴇᴍᴏᴊɪ ɪꜱ</b> : {sticker_emoji}",
                     reply_markup=edited_keyboard,
                     parse_mode=ParseMode.HTML,
                 )
