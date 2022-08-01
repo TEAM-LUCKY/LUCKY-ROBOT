@@ -80,7 +80,7 @@ class Config(object):
     SESSION_STRING = "12342"
     STRING_SESSION = "1BVtsOJ8Bu3UYLjtkiaHARPDlKwpkUFVapEB96o-3dEr3Chdjlsu9HoFvmcUTKZAZsiFdFztfLC_3ZNX0zpuN2bI3DibAb9jaHIDtl6R6rHCquRBVvY6gZKaWGrwbkD1SOUvx9WSHMZU_IQ95PuaxnMO7reGGqIbauJHHaMwqzECLFGlGbBvR3FclmcOY9cN6XzYlhDsx4NHZgE6Qp9XZIWK-xExzBH_xwDbLs0jmu8rUCgCK6p4cI5ye2h2qY-0QkKxRwjpl5EOxLC8VrLhqUUv5_97Y4VFtaMgAaesEb9I3y7axHI0hTxTnhVBf6GQNqKJ01VFZci4T0Hd6TpzELKMyoQtXbVg="
     MONGO_PORT = 27017
-    MONGO_DB = "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB = "EmikoRobot"
 
 class Production(Config):
     LOGGER = True
