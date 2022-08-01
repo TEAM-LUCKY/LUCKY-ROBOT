@@ -313,39 +313,40 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
-❂ /runs*:* reply a random string from an array of replies
-❂ /slap*:* slap a user, or get slapped if not a reply
-❂ /shrug*:* get shrug XD
-❂ /table*:* get flip/unflip :v
-❂ /decide*:* Randomly answers yes/no/maybe
-❂ /toss*:* Tosses A coin
-❂ /bluetext*:* check urself :V
-❂ /roll*:* Roll a dice
-❂ /rlg*:* Join ears,nose,mouth and create an emo ;-;
-❂ /shout <keyword>*:* write anything you want to give loud shout
-❂ /weebify <text>*:* returns a weebified text
-❂ /sanitize*:* always use this before /pat or any contact
-❂ /pat*:* pats a user, or get patted
-❂ /8ball*:* predicts using 8ball method
+•➥ /runs: ʀᴇᴘʟʏ ᴀ ʀᴀɴᴅᴏᴍ sᴛʀɪɴɢ ғʀᴏᴍ ᴀɴ ᴀʀʀᴀʏ ᴏғ ʀᴇᴘʟɪᴇs
 
-- Animation
-❂ /love 
-❂ /hack 
-❂ /bombs 
+•➥ /slap: sʟᴀᴘ a ᴜsᴇʀ, ᴏʀ ɢᴇᴛ sʟᴀᴘᴘᴇᴅ ɪғ ɴᴏᴛ ᴀ ʀᴇᴘʟʏ
 
-- Shippering
-❂ /couples - get couples of today
+•➥ /shrug: ɢᴇᴛ sʜʀᴜɢ XD
 
-- Here is the help for the Styletext module:
+•➥ /table: ɢᴇᴛ ғʟɪᴘ/ᴜɴғʟɪᴘ :ᴠ
 
-❂ /weebify <text>: weebify your text!
-❂ /bubble <text>: bubble your text!
-❂ /fbubble <text>: bubble-filled your text!
-❂ /square <text>: square your text!
-❂ /fsquare <text>: square-filled your text!
-❂ /blue <text>: bluify your text!
-❂ /latin <text>: latinify your text!
-❂ /lined <text>: lined your text!
+•➥ /decide: ʀᴀɴᴅᴏᴍʟʏ ᴀɴsᴡᴇʀs ʏᴇs/ɴᴏ/ᴍᴀʏʙᴇ
+
+•➥ /toss: ᴛᴏssᴇs ᴀ ᴄᴏɪɴ
+
+•➥ /bluetext: ᴄʜᴇᴄᴋ ᴜʀsᴇʟғ :ᴠ
+
+•➥ /roll: ʀᴏʟʟ ᴀ ᴅɪᴄᴇ
+
+•➥ /rlg: ᴊᴏɪɴ ᴇᴀʀs,ɴᴏsᴇ,ᴍᴏᴜᴛʜ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴀɴ ᴇᴍᴏ ;-;
+
+•➥ /shout <keyword>: ᴡʀɪᴛᴇ ᴀɴʏᴛʜɪɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ʟᴏᴜᴅ sʜᴏᴜᴛ
+
+•➥ /weebify <text>: ʀᴇᴛᴜʀɴs ᴀ ᴡᴇᴇʙɪғɪᴇᴅ ᴛᴇxᴛ
+
+•➥ /sanitize: ᴀʟᴡᴀʏs ᴜsᴇ ᴛʜɪs ʙᴇғᴏʀᴇ /ᴘᴀᴛ ᴏʀ ᴀɴʏ ᴄᴏɴᴛᴀᴄᴛ
+
+•➥ /pat: ᴘᴀᴛs ᴀ ᴜsᴇʀ, or ɢᴇᴛ ᴘᴀᴛᴛᴇᴅ
+
+•➥ /8ball: ᴘʀᴇᴅɪᴄᴛs ᴜsɪɴɢ 8ʙᴀʟʟ ᴍᴇᴛʜᴏᴅ
+
+*- ᴀɴɪᴍᴀᴛɪᴏɴ*
+•➥ /love 
+•➥ /hack 
+•➥ /bombs 
+
+*➻ ᴘᴏᴡᴇʀᴅ  ʙʏ © @Cute_Boy701 ™*
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
