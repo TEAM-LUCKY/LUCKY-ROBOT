@@ -12,25 +12,25 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    API_ID = 8289355  # integer value, dont use ""
+    API_HASH = "55822f9d50c5b011177539545f760852"
+    TOKEN = "5536955609:AAGIrULRGNLtnRS_L2WthQssSsIFss1xfS0"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1962673406  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
     OWNER_USERNAME = "cute_boy701"
-    BOT_USERNAME = "RAMDIMUSICBOT"
+    BOT_USERNAME = "psycho_bbot"
     SUPPORT_CHAT = "TERAYAARHOOMAI"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001748076180
+        -1001554007729
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001748076180
+        -1001554007729
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    ERROR_LOG = -1001657496255
+    ERROR_LOG = -1001554007729
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "postgres://uizkxoqk:clkBCgdGMsiElnRW_3_kqLnqaGDCbkje@fanny.db.elephantsql.com/uizkxoqk"  # needed for any database modules
-    MONGO_DB_URI = "mongo+srv"  # needed for any database modules
+    MONGO_DB_URI = "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
     ARQ_API_URL = "https://arq.hamker.in"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
@@ -44,15 +44,15 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "1962673406")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "1962673406")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "1962673406")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
-    WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = None  # EG, paypal
+    TIGERS = get_user_list("elevated_users.json", "1962673406")
+    WOLVES = get_user_list("elevated_users.json", "1962673406")
+    DONATION_LINK = https://t.me/oye_golgappu  # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
@@ -81,7 +81,7 @@ class Config(object):
     CF_API_KEY = "jk"
     BL_CHATS = []  # List of groups that you want blacklisted.
     SESSION_STRING = "12342"
-    STRING_SESSION = "kontol"
+    STRING_SESSION = "1BVtsOJ8Bu3UYLjtkiaHARPDlKwpkUFVapEB96o-3dEr3Chdjlsu9HoFvmcUTKZAZsiFdFztfLC_3ZNX0zpuN2bI3DibAb9jaHIDtl6R6rHCquRBVvY6gZKaWGrwbkD1SOUvx9WSHMZU_IQ95PuaxnMO7reGGqIbauJHHaMwqzECLFGlGbBvR3FclmcOY9cN6XzYlhDsx4NHZgE6Qp9XZIWK-xExzBH_xwDbLs0jmu8rUCgCK6p4cI5ye2h2qY-0QkKxRwjpl5EOxLC8VrLhqUUv5_97Y4VFtaMgAaesEb9I3y7axHI0hTxTnhVBf6GQNqKJ01VFZci4T0Hd6TpzELKMyoQtXbVg="
     MONGO_PORT = 27017
     MONGO_DB = "Emiko"
 
