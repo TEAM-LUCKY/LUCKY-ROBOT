@@ -47,8 +47,8 @@ class Config(object):
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = "1962673406"
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "1962673406")
-    WOLVES = get_user_list("elevated_users.json", "1962673406")
+    TIGERS = "1962673406"
+    WOLVES = "1962673406"
     DONATION_LINK = "https://t.me/oye_golgappu"  # EG, paypal
     CERT_PATH = None
     PORT = 5000
