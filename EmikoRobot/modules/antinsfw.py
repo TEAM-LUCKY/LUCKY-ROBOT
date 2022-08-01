@@ -7,7 +7,7 @@ from EmikoRobot.utils.errors import capture_err
 from EmikoRobot.utils.permissions import adminsOnly
 from EmikoRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 
-__mod_name__ = "Aɴᴛɪ-ɴꜱꜰᴡ​"
+__mod_name__ = "Aɴᴛɪ-ɴꜱꜰᴡ​ 🔵"
 
 __help__ = """
 *ᴀɴᴛɪ ᴘᴏʀɴ sʏsᴛᴇᴍ*
