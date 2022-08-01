@@ -24,19 +24,19 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/11b5922a33de9968cedfe.jpg"
+MEMEK = "https://telegra.ph/file/6f481c8679a65ddf55eeb.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Emiko Robot** 
+        caption=f"""✨ **ʜᴇʏ ɪ ᴀᴍ** [ʟᴜᴄᴋʏ ʀᴏʙᴏᴛ](https://t.me/lucky_officialbot) 
 
-**Owner repo : [sena-ex](https://t.me/excrybaby)**
-**Python Version :** `{y()}`
-**Library Version :** `{o}`
-**Telethon Version :** `{s}`
-**Pyrogram Version :** `{z}`
+**» ᴍᴀʜ ᴏᴡɴᴇʀ : [ʟᴜᴄᴋʏ'xᴅ](https://t.me/excrybaby)**
+**» ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{y()}`
+**» ʟɪʙʀᴀʀʏ ᴠᴇʀꜱɪᴏɴ :** `{o}`
+**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{s}`
+**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀꜱɪᴏɴ :** `{z}`
 
 **Create your own with click button bellow.**
 """,
@@ -44,10 +44,18 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/kennedy-ex/emikorobot"), 
+                        "ꜱᴏᴜʀᴄᴇ", url="https://github.com/mrluckyxd/EMIKO-ROBOT"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/emikosupport")
+                        "ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/terayaarhoomai")
                 ]
             ]
         )
     )
+
+__mod_name__ = "Cᴀʀʙᴏɴ"
+
+__help__ = """
+*ᴍᴀᴋᴇs ᴀ ᴄᴀʀʙᴏɴ ᴏғ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ.*
+
+❍ /carbon : ᴍᴀᴋᴇs ᴄᴀʀʙᴏɴ ɪғ ʀᴇᴩʟɪᴇᴅ ᴛᴏ ᴀ ᴛᴇxᴛ
+"""
