@@ -136,7 +136,7 @@ def kang(update, context):
                 )
                 msg.reply_text(
                     f"<b>ʏᴏᴜʀ ꜱᴛɪᴄᴋᴇʀ ʜᴀꜱ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ!</b>"
-                    f"\nғᴏʀ ғᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ .ʀᴇᴍᴏᴠᴇ ʏᴏᴜʀ ᴘᴀᴄᴋ.& ᴀᴅᴅ ᴀɢᴀɪɴ
+                    f"\nғᴏʀ ғᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ .ʀᴇᴍᴏᴠᴇ ʏᴏᴜʀ ᴘᴀᴄᴋ.& ᴀᴅᴅ ᴀɢᴀɪɴ"
                     f"\n<b>ᴇᴍᴏᴊɪ ɪꜱ</b> : {sticker_emoji}",
                     reply_markup=edited_keyboard,
                     parse_mode=ParseMode.HTML,
