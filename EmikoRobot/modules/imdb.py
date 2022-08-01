@@ -107,3 +107,9 @@ async def imdb(e):
         )
     except IndexError:
         await e.reply("Plox enter **Valid movie name** kthx")
+
+__mod_name__ = "Iᴍᴅʙ 💫"
+
+__help__ = """
+❍ /imdb <ᴍᴏᴠɪᴇ ɴᴀᴍᴇ>: ɢᴇᴛ ꜰᴜʟʟ ɪɴꜰᴏ ᴀʙᴏᴜᴛ ᴀ ᴍᴏᴠɪᴇ ꜰʀᴏᴍ imdb.com
+"""
