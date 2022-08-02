@@ -2404,7 +2404,7 @@ def fed_user_help(update: Update, context: CallbackContext):
     )
 
 
-__mod_name__ = "ꜰᴇᴅꜱ"
+__mod_name__ = "Fᴇᴅꜱ 🇫🇲"
 
 __help__ = """
 ⍟ᴘᴏᴡᴇʀᴇᴅ ʙʏ © [ʟᴜᴄᴋʏ](https://t.me/cute_boy701)
