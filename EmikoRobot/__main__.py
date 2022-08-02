@@ -447,8 +447,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/terayaarhoomai"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
