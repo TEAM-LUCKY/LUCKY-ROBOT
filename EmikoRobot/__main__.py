@@ -428,19 +428,19 @@ def emiko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🍬 ᴀᴅᴍɪɴ 🍬", callback_data="Music_admin"
+                            text="🍬 ᴀᴅᴍɪɴ 🍬", callback_data="emiko_admin"
                         ),
                         InlineKeyboardButton(
-                            text="🍹 ᴘʟᴀʏ 🍹", callback_data="Music_play"
+                            text="🍹 ᴘʟᴀʏ 🍹", callback_data="emiko_play"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🍸 ʙᴏᴛ 🍸", callback_data="Music_bot"
+                            text="🍸 ʙᴏᴛ 🍸", callback_data="emiko_bot"
                         ),
                         InlineKeyboardButton(
                             text="🍷 ᴇxᴛʀᴀ 🍷",
-                            callback_data="Music_extra",
+                            callback_data="emiko_extra",
                         ),
                     ],
                     [
