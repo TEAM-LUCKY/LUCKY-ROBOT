@@ -474,7 +474,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="music_"),
+                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
                  
                  ]
                 ]
@@ -504,7 +504,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="music_"),
+                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
                  
                  ]
                 ]
@@ -535,7 +535,7 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="music_"),
+                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
                  
                  ]
                 ]
@@ -559,7 +559,7 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="music_"),
+                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
                  
                  ]
                 ]
