@@ -449,7 +449,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "Music_admin":
+    elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
@@ -480,7 +480,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "Music_play":
+    elif query.data == "emiko_play":
         query.message.edit_text(
             text=f"*» ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
@@ -510,7 +510,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "Music_bot":
+    elif query.data == "emiko_bot":
         query.message.edit_text(
             text=f"*» ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
@@ -541,7 +541,7 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
                 ]
             ),
         )
-    elif query.data == "Music_extra":
+    elif query.data == "emiko_extra":
         query.message.edit_text(
             text=f"*» ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
