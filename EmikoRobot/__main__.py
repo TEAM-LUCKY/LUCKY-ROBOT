@@ -112,12 +112,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-              ╔══════════⋐❀⋑═════════╗  
+              ╔═════════⋐❀⋑═════════╗  
      
    ✦ ʜᴇʀᴇ ɪꜱ ᴍᴀʜ ᴇxᴄʟᴜꜱɪᴠᴇ ᴄᴏᴍᴍᴀɴᴅꜱ
    ✦ ᴜʜʜ ᴄᴀɴ ᴄʟɪᴄᴋᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ
    ✦ ᴛᴏ ɢᴇᴛ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄᴏᴍᴍᴀɴᴅ'ꜱ ʜᴇʟᴘ
-              ╚══════════⋐❀⋑═════════╝          
+              ╚═════════⋐❀⋑═════════╝          
 """
 
 
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/terayaarhoomai"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/lobe_ju"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
                  ],
                  [
@@ -450,7 +450,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/terayaarhoomai"),
+                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/lobe_ju"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
                  ],
                  [
@@ -478,7 +478,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/ii_1444"),
                  ],
                  [
-                    InlineKeyboardButton(text="ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/terayaarhoomai"),
+                    InlineKeyboardButton(text="ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/lobe_ju"),
                     InlineKeyboardButton(text="ꜰᴜɴ", url="https://t.me/ii_1443"),
                  ],
                  [
