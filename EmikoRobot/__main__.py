@@ -84,7 +84,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ʜᴇʟʟᴏ {} !
 
-✪ ɪ'ᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ғᴜʟʟ ғʟᴇᴅɢᴇ [✨](https://telegra.ph/file/fea5961f4dc3fe06d9e0d.jpg)
+✪ ɪ'ᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟʟ ғᴜʟʟ ғʟᴇᴅɢᴇ [✨](https://telegra.ph/file/238bd2002640875c88c33.jpg)
 ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ ᴡɪᴛʜ ᴏsᴍ
 sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 **───────────────**
@@ -98,15 +98,15 @@ sᴇᴄᴜʀɪᴛʏ ᴀɴᴅ ᴍᴏᴅᴜʟᴇs!!
 buttons = [
     [
         InlineKeyboardButton(
-            text="•• ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ •• ", url=f"t.me/{bu}?startgroup=new"),
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text=" ɪɴꜰᴏ ", callback_data="emiko_"),
-        InlineKeyboardButton(text=" ᴍᴜꜱɪᴄ ", callback_data="emiko_credit"),
+        InlineKeyboardButton(text="✪ ɪɴꜰᴏ ", callback_data="emiko_"),
+        InlineKeyboardButton(text=" ᴍᴜꜱɪᴄ ✪", callback_data="emiko_credit"),
     ],
     [
         InlineKeyboardButton(
-            text="⇩ ꜱᴇᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
+            text="⇩ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
     ],
 ]
 
