@@ -5,7 +5,7 @@ from EmikoRobot import ubot2 as ubot
 from asyncio.exceptions import TimeoutError
 
 
-__mod_name__ = "Sᴀɴɢᴍᴀᴛᴀ"
+__mod_name__ = "Sᴀɴɢᴍᴀᴛᴀ 🦋"
 
 __help__ = """
 *Sᴀɴɢᴍᴀᴛᴀ ɪɴꜰᴏ ʙᴏᴛ*
