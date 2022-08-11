@@ -537,7 +537,7 @@ def __chat_settings__(chat_id, user_id):
     return f"This chat is enforcing *gbans*: `{sql.does_chat_gban(chat_id)}`."
 
 
-__help__ = f"""
+__help__ = """
 *ᴀᴅᴍɪɴs ᴏɴʟʏ*
  
 ➥ /antispam <on/off/yes/no> : ᴡɪʟʟ ᴛᴏɢɢʟᴇ ᴏᴜʀ ᴀɴᴛɪsᴘᴀᴍ ᴛᴇᴄʜ ᴏʀ ʀᴇᴛᴜʀɴ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ sᴇᴛᴛɪɴɢs. 
