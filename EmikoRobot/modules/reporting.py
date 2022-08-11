@@ -265,14 +265,15 @@ def buttons(update: Update, context: CallbackContext):
 
 
 __help__ = """
-❂ /report <reason>*:* reply to a message to report it to admins.
-❂ @admin*:* reply to a message to report it to admins.
-*NOTE:* Neither of these will get triggered if used by admins.
+➻ /report <reason>: ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ ᴀᴅᴍɪɴꜱ.
+➻ @admin: ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ ᴀᴅᴍɪɴs.
 
-*Admins only:*
-❂ /reports <on/off>*:* change report setting, or view current status.
-❂ If done in pm, toggles your status.
-❂ If in group, toggles that groups's status.
+*ɴᴏᴛᴇ: ɴᴇɪᴛʜᴇʀ ᴏғ ᴛʜᴇꜱᴇ ᴡɪʟʟ ɢᴇᴛ ᴛʀɪɢɢᴇʀᴇᴅ ɪғ ᴜsᴇs ʙʏ ᴀᴅᴍɪɴs.*
+
+*Aᴅᴍɪɴꜱ ᴏɴʟʏ:*
+➻ /reports <on/off>: ᴄʜᴀɴɢᴇ ʀᴇᴘᴏʀᴛ sᴇᴛᴛɪɴɢ, ᴏʀ ᴠɪᴇᴡ ᴄᴜʀʀᴇɴᴛ ꜱᴛᴀᴛᴜꜱ.
+➻ ɪғ ᴅᴏɴᴇ ɪɴ ᴘᴍ, ᴛᴏɢɢʟᴇꜱ ʏᴏᴜʀ ꜱᴛᴀᴛᴜꜱ.
+➻ ɪғ ɪɴ ɢʀᴏᴜᴘ, ᴛᴏɢɢʟᴇꜱ ᴛʜᴀᴛ ɢʀᴏᴜᴘꜱ ꜱᴛᴀᴛᴜꜱ.
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting, run_async=True)
@@ -291,7 +292,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "ʀᴇᴘᴏʀᴛꜱ"
+__mod_name__ = "Rᴇᴘᴏʀᴛꜱ 🍻"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
