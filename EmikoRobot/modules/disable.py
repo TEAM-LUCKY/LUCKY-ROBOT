@@ -318,15 +318,18 @@ if is_module_loaded(FILENAME):
 
 
     __help__ = """
-❂ /cmds*:* check the current status of disabled commands
+➻ /cmds: ᴄʜᴇᴄᴋ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ꜱᴛᴀᴛᴜꜱ ᴏғ ᴅɪꜱᴀʙʟᴇᴅ ᴄᴏᴍᴍᴀɴᴅꜱ
 
-*Admins only:*
+*ᴀᴅᴍɪɴꜱ ᴏɴʟʏ:*
+➻ /enable <ᴄᴍᴅ ɴᴀᴍᴇ>: ᴇɴᴀʙʟᴇ ᴛʜᴀᴛ ᴄᴏᴍᴍᴀɴᴅ
 
-❂ /enable <cmd name>*:* enable that command
-❂ /disable <cmd name>*:* disable that command
-❂ /enablemodule <module name>*:* enable all commands in that module
-❂ /disablemodule <module name>*:* disable all commands in that module
-❂ /listcmds*:* list all possible toggleable commands
+➻ /disable <ᴄᴍᴅ ɴᴀᴍᴇ>: ᴅɪꜱᴀʙʟᴇ ᴛʜᴀᴛ ᴄᴏᴍᴍᴀɴᴅ
+
+➻ /enablemodule <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴇɴᴀʙʟᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ɪɴ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ
+
+➻ /disablemodule <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴅɪꜱᴀʙʟᴇ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ɪɴ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ
+
+➻ /listcmds: ʟɪꜱᴛ ᴀʟʟ ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏɢɢʟᴇᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ 
 """
 
     DISABLE_HANDLER = CommandHandler("disable", disable, run_async=True)
@@ -347,7 +350,7 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(COMMANDS_HANDLER)
     dispatcher.add_handler(TOGGLE_HANDLER)
 
-    __mod_name__ = "ᴅɪꜱᴀʙʟᴇ"
+    __mod_name__ = "Dɪꜱᴀʙʟᴇ 🍬"
 
 else:
     DisableAbleCommandHandler = CommandHandler
