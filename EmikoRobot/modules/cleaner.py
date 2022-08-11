@@ -215,15 +215,14 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
 
 
 __help__ = """
- *ʙʟᴜᴇ ᴛᴇxᴛ ᴄʟᴇᴀɴᴇʀ ʀᴇᴍᴏᴠᴇᴅ ᴀɴʏ ᴍᴀᴅᴇ ᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʜᴀᴛ ᴘᴇᴏᴘʟᴇ ꜱᴇɴᴅ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.*
-»/cleanblue <ᴏɴ/ᴏꜰꜰ/ʏᴇꜱ/ɴᴏ>: ᴄʟᴇᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀғᴛᴇʀ ꜱᴇɴᴅɪɴɢ
-»/ignoreblue <ᴡᴏʀᴅ>: ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
-»/unignoreblue <ᴡᴏʀᴅ>: ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
+»/cleanblue <on/off/yes/no>: ᴄʟᴇᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ᴀғᴛᴇʀ ꜱᴇɴᴅɪɴɢ
+»/ignoreblue <word>: ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
+»/unignoreblue <word>: ʀᴇᴍᴏᴠᴇ ᴘʀᴇᴠᴇɴᴛ ᴀᴜᴛᴏ ᴄʟᴇᴀɴɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
 »/listblue: ʟɪꜱᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴡʜɪᴛᴇʟɪꜱᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅꜱ
 
  *ғᴏʟʟᴏᴡɪɴɢ ᴀʀᴇ ᴅɪꜱᴀꜱᴛᴇʀꜱ ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅꜱ, ᴀᴅᴍɪɴꜱ 𝚌𝚊𝚗𝚗𝚘𝚝 ᴜꜱᴇ ᴛʜᴇꜱᴇ:*
-»/gignoreblue <ᴡᴏʀᴅ>: ɢʟᴏʙᴀʟʟʏ ɪɢɴᴏʀᴇᴀ ʙʟᴜᴇᴛᴇxᴛ ᴄʟᴇᴀɴɪɴɢ ᴏғ ꜱᴀᴠᴇᴅ ᴡᴏʀᴅ ᴀᴄʀᴏꜱꜱ ꜱᴀɪᴛᴀᴍᴀ.
-»/ungignoreblue <ᴡᴏʀᴅ>: ʀᴇᴍᴏᴠᴇ ꜱᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғʀᴏᴍ ɢʟᴏʙᴀʟ ᴄʟᴇᴀɴɪɴɢ ʟɪꜱᴛ
+»/gignoreblue <word>: ɢʟᴏʙᴀʟʟʏ ɪɢɴᴏʀᴇᴀ ʙʟᴜᴇᴛᴇxᴛ ᴄʟᴇᴀɴɪɴɢ ᴏғ ꜱᴀᴠᴇᴅ ᴡᴏʀᴅ ᴀᴄʀᴏꜱꜱ ꜱᴀɪᴛᴀᴍᴀ.
+»/ungignoreblue <word>: ʀᴇᴍᴏᴠᴇ ꜱᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғʀᴏᴍ ɢʟᴏʙᴀʟ ᴄʟᴇᴀɴɪɴɢ ʟɪꜱᴛ
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler(
@@ -262,7 +261,7 @@ dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
 dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_HANDLER)
 dispatcher.add_handler(CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)
 
-__mod_name__ = "ᴄʟᴇᴀɴᴇʀ"
+__mod_name__ = "Cʟᴇᴀɴ 🌸"
 __handlers__ = [
     SET_CLEAN_BLUE_TEXT_HANDLER,
     ADD_CLEAN_BLUE_TEXT_HANDLER,
