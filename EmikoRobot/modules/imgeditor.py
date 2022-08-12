@@ -6,7 +6,6 @@ from pyrogram.types import (
     Message,
 )
 
-from EmikoRobot import BOT_NAME
 
 from EmikoRobot.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
