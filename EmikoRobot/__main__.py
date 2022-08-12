@@ -968,7 +968,7 @@ def main():
 ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ━━━━━━━━━━━━━
 
-ᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ [𝐋 𝐔 𝐂 𝐊 𝐘](https://t.me/{OWNER_USERNAME})""",
+ᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ [𝐋 𝐔 𝐂 𝐊 𝐘](https://t.me/cute_boy701)""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
