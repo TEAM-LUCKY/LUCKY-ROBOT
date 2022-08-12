@@ -107,6 +107,10 @@ buttons = [
         InlineKeyboardButton(text=" ᴍᴜꜱɪᴄ ✪", callback_data="emiko_credit"),
     ],
     [
+        InlineKeyboardButton(text="✪ ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/lobe_ju"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ✪", url=f"https://t.me/oye_golgappu"),
+    ],
+    [
         InlineKeyboardButton(
             text="⇩ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
     ],
