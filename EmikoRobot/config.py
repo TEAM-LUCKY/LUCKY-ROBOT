@@ -28,8 +28,8 @@ class Config(object):
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "postgres://uizkxoqk:clkBCgdGMsiElnRW_3_kqLnqaGDCbkje@fanny.db.elephantsql.com/uizkxoqk"  # needed for any database modules
     MONGO_DB_URI = "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
-    ARQ_API_URL = "https://arq.hamker.in"
-    ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
+    ARQ_API_URL = "http://arq.hamker.in"
+    ARQ_API_KEY = "RRWNKD-BWGWQG-ARPLYD-YHFSYM-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
