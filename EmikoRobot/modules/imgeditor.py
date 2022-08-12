@@ -446,10 +446,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "Image Editor"
+__mod_name__ = "Eᴅɪᴛᴏʀ 🔮"
 __help__ = f"""
-LUCKY have some advanced image editing tools inbuilt
-Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
-  ➢ `/edit [reply to image]`*:* Open the image editor
-  ➢ `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+*➻ ɪ ʜᴀᴠᴇ ꜱᴏᴍᴇ ᴀᴅᴠᴀɴᴄᴇ ɪᴍᴀɢᴇ ᴇᴅɪᴛɪɴɢ ᴛᴏᴏʟꜱ ɪɴʙᴜɪʟᴛ.*
+
+  ➺ /edit [ʀᴇᴘʟʏ]*:* ᴏᴘᴇɴ ᴛʜᴇ ɪᴍᴀɢᴇ ᴇᴅɪᴛᴏʀ
+  ➺ /rmbg [ʀᴇᴘʟʏ]*:* ʀᴇᴍᴏᴠᴇ ʙɢ ᴏꜰ ꜱᴛɪᴄᴋᴇʀ/ɢɪꜰ.
 """
