@@ -26,7 +26,7 @@ class Config(object):
     ERROR_LOG = -1001554007729
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://uizkxoqk:clkBCgdGMsiElnRW_3_kqLnqaGDCbkje@fanny.db.elephantsql.com/uizkxoqk"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
     MONGO_DB_URI = "mongodb+srv://Ziddiboy:vijayrao1703@cluster0.4wbux.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
     ARQ_API_URL = "http://arq.hamker.in"
     ARQ_API_KEY = "RRWNKD-BWGWQG-ARPLYD-YHFSYM-ARQ"
@@ -73,12 +73,12 @@ class Config(object):
     TEMP_DOWNLOAD_DIRECTORY = "./"
     HEROKU_APP_NAME = "siap"
     HEROKU_API_KEY = "YES"
-    REM_BG_API_KEY = "yahoo"
+    REM_BG_API_KEY = "FJxkbrJNx7SfffHPyjAs3A3z"
     LASTFM_API_KEY = "yeah"
     CF_API_KEY = "jk"
     BL_CHATS = []  # List of groups that you want blacklisted.
     SESSION_STRING = "12342"
-    STRING_SESSION = "1BVtsOJ8Bu3UYLjtkiaHARPDlKwpkUFVapEB96o-3dEr3Chdjlsu9HoFvmcUTKZAZsiFdFztfLC_3ZNX0zpuN2bI3DibAb9jaHIDtl6R6rHCquRBVvY6gZKaWGrwbkD1SOUvx9WSHMZU_IQ95PuaxnMO7reGGqIbauJHHaMwqzECLFGlGbBvR3FclmcOY9cN6XzYlhDsx4NHZgE6Qp9XZIWK-xExzBH_xwDbLs0jmu8rUCgCK6p4cI5ye2h2qY-0QkKxRwjpl5EOxLC8VrLhqUUv5_97Y4VFtaMgAaesEb9I3y7axHI0hTxTnhVBf6GQNqKJ01VFZci4T0Hd6TpzELKMyoQtXbVg="
+    STRING_SESSION = ""
     MONGO_PORT = "27017"
     MONGO_DB = "EmikoRobot"
 
