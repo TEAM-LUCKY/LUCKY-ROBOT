@@ -19,21 +19,21 @@ async def arq_stats(_, message):
     python_version = data.python
     users = data.users
     statistics = f"""
-**>-< System >-<**
-**Uptime:** `{uptime}`
-**Requests Since Uptime:** `{requests}`
-**CPU:** `{cpu}`
-**Memory:**
-    **Total Used:** `{server_mem}`
-    **API:** `{api_mem}`
-**Disk:** `{disk}`
-**Platform:** `{platform}`
-**Python:** `{python_version}`
+**>-< ꜱʏꜱᴛᴇᴍ >-<**
+**ᴜᴘᴛɪᴍᴇ:** {uptime}
+**ʀᴇQᴜᴇꜱᴛꜱ ꜱɪɴᴄᴇ ᴜᴘᴛɪᴍᴇ:** {requests}
+**ᴄᴘᴜ:** {cpu}
+**ᴍᴇᴍᴏʀʏ:**
+**ᴛᴏᴛᴀʟ ᴜꜱᴇᴅ:** {server_mem}
+**ᴀᴘɪ:** {api_mem}
+**ᴅɪꜱᴋ:** {disk}
+**ᴘʟᴀᴛꜰᴏʀᴍ:** {platform}
+**ᴘʏᴛʜᴏɴ:** {python_version}
 
-**ARQ Statistics:**
-**Users:** `{users}`
+**ᴀʀQ ꜱᴛᴀᴛɪᴄꜱ:**
+**ᴜꜱᴇʀꜱ:** {users}
 
-**@{BOT_USERNAME} Some Modules Running On ARQ**
+**@{BOT_USERNAME} ꜱᴏᴍᴇ ᴍᴏᴅᴜʟᴇꜱ ʀᴜɴɴɪɴɢ ᴏɴ ᴀʀQ**
 """
     await message.reply_text(
         statistics, disable_web_page_preview=True
