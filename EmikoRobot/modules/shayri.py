@@ -34,7 +34,7 @@ ROMANTIC_STRINGS = [
     Coded by : @Cute_Boy701 on telegram...
 """
 
-@scenario.on_message(filters.command("romantic"))
+@pbot.on_message(filters.command("romantic"))
 async def lel(bot, message):
     ran = random.choice(ROMANTIC_STRINGS)
     await bot.send_chat_action(message.chat.id, "typing")
