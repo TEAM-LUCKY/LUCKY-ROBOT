@@ -53,6 +53,10 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
+from telegram import __version__ as telever
+from telethon import __version__ as tlhver
+from pyrogram import __version__ as pyrover
+from platform import python_version as y
 from telegram.utils.helpers import escape_markdown
 
 
@@ -88,9 +92,9 @@ PM_START_TEXT = """
 *ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ*
 *sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.!!*
 *───────────────*
-  ➻  **ᴜᴘᴛɪᴍᴇ:** `{}`
- ➻ **ᴜsᴇʀs:** `{}`
- ➻ **chats:** `{}`
+  ➻  *ᴜᴘᴛɪᴍᴇ:* `{}`
+ ➻ *ᴜsᴇʀs:* `{}`
+ ➻ *chats:* `{}`
 *───────────────*
 *๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ*
 *ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ*
@@ -951,14 +955,25 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
+            dispatcher.bot.sendAnimation(
+                f"@{SUPPORT_CHAT}",
+                animation="https://telegra.ph/file/38091db0a04a50d938db6.mp4",
+                caption=f"""
+ㅤㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+
+━━━━━━━━━━━━━
+ㅤ๏ **ᴘʏᴛʜᴏɴ :** `{y()}`
+ㅤ๏ **ʟɪʙʀᴀʀʏ :** `{telever}`
+ㅤ๏ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
+ㅤ๏ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+━━━━━━━━━━━━━
+
+ᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ [𝐋 𝐔 𝐂 𝐊 𝐘](https://t.me/{OWNER_USERNAME})""",
+                parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                f"Bot isn't able to send message to @{SUPPORT_CHAT}, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
