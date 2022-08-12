@@ -1,6 +1,3 @@
-# By @TroJanzHEX
-# Improved by TeamDaisyX
-
 from pyrogram import filters
 from pyrogram.types import (
     CallbackQuery,
@@ -9,7 +6,8 @@ from pyrogram.types import (
     Message,
 )
 
-# By @TroJanzHEX
+from EmikoRobot import BOT_NAME
+
 from EmikoRobot.ex_plugins.ImageEditor.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
@@ -61,7 +59,7 @@ from EmikoRobot import pbot
 lel = 00000000
 # pylint:disable=import-error
 @pbot.on_message(filters.command(["edit", "editor"]))
-async def photo(client: pbot, message: Message):
+async def photo(client: pgram, message: Message):
     try:
         if not message.reply_to_message.photo:
             await client.send_message(message.chat.id, "Reply to an image man!ㅤㅤ")
@@ -119,15 +117,14 @@ async def photo(client: pbot, message: Message):
         print("photomarkup error - " + str(e))
         if "USER_IS_BLOCKED" in str(e):
             return
-        else:
-            try:
-                await message.reply_text("Something went wrong!", quote=True)
-            except Exception:
-                return
+        try:
+            await message.reply_text("Something went wrong!", quote=True)
+        except Exception:
+            return
 
 
 @pbot.on_callback_query()
-async def cb_handler(client: pbot, query: CallbackQuery):
+async def cb_handler(client: pgram, query: CallbackQuery):
     user_id = query.from_user.id
     if lel == user_id:
         if query.data == "removebg":
@@ -450,4 +447,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "ɪᴍɢ ᴇᴅɪᴛᴏʀ"
+__mod_name__ = "Image Editor"
+__help__ = f"""
+{BOT_NAME} have some advanced image editing tools inbuilt
+Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
+  ➢ `/edit [reply to image]`*:* Open the image editor
+  ➢ `/rmbg [REPLY]`*:* Revove BG of replied image/sticker.
+"""
