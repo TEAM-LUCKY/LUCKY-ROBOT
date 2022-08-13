@@ -386,18 +386,15 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/cute_boy701"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/oye_golgappu"),
+                    InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ", url=f"https://t.me/cute_boy701"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ 🥂", url=f"https://t.me/oye_golgappu"),
                  ],
                  [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ɪɴꜰᴏ", callback_data="emiko_menu"),
+                    InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="ɪɴꜰᴏ 🥀", callback_data="emiko_menu"),
                  ],
                  [
-                    InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="source_back"),
+                    InlineKeyboardButton(text="♦️ ɢᴏ ʙᴀᴄᴋ ♦️", callback_data="source_back"),
                  ]
                 ]
             ),
