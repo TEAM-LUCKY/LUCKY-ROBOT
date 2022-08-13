@@ -445,6 +445,7 @@ def emiko_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(text="🍒 ꜱᴜᴅᴏ ᴜꜱᴇʀ 🍒", callback_data="emiko_sudo"),
+                    ]
                     [
                         InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ 🥂", url="tg://user?id=1962673406"),
                         InlineKeyboardButton(text="♦️ ʙᴀᴄᴋ ♦️", callback_data="source_back"),
