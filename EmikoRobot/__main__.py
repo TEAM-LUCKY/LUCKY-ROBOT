@@ -997,7 +997,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 animation="https://telegra.ph/file/38091db0a04a50d938db6.mp4",
                 caption=f"""
-ㅤㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
 ━━━━━━━━━━━━━
 ㅤ๏ **ᴘʏᴛʜᴏɴ :** `{y()}`
