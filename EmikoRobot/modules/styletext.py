@@ -473,7 +473,7 @@ def lined(update, context):
     else:
         message.reply_text(string)
 
-__mod_name__ = "ᴛᴇxᴛ 🔥"
+__mod_name__ = "Tᴇxᴛ 🔥"
 
 __help__ = """
 •➥ /weebify <text>: 山乇乇乃工下丫 ʏᴏᴜʀ ᴛᴇxᴛ!
