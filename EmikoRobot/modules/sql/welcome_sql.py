@@ -9,7 +9,7 @@ from sqlalchemy.sql.sqltypes import BigInteger
 
 
 DEFAULT_WELCOME_MESSAGES = [
-    "ʜᴇʏ ʙʀᴏ {fullname}",
+    "ʜᴇʏ ʙʀᴏ {first} ʜᴏᴡ ᴀʀᴇ ᴜʜʜ 💜",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
