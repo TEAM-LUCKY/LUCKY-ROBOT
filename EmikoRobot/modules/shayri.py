@@ -1,7 +1,7 @@
 import random
 import asyncio
 from pyrogram import filters
-from EmikoRobot import pbot as bu
+from EmikoRobot import pbot
 
 
 
@@ -37,6 +37,5 @@ ROMANTIC_STRINGS = [
 @pbot.on_message(filters.command("romantic"))
 async def lel(bot, message):
     ran = random.choice(ROMANTIC_STRINGS)
-    await bot.send_chat_action(message.chat.id, "typing")
     await asyncio.sleep(1.5)
     return await message.reply_text(text=ran)
