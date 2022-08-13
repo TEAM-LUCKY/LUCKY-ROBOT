@@ -1,7 +1,7 @@
 import random
 import asyncio
 from pyrogram import filters
-from EmikoRobot import pbot
+from EmikoRobot import pbot as bu
 
 
 
