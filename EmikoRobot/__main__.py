@@ -26,7 +26,6 @@ from EmikoRobot import (
     SUPPORT_CHAT,
     dispatcher,
     StartTime,
-    START_IMG,
     telethn,
     pbot,
     updater,
