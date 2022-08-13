@@ -9,22 +9,7 @@ from sqlalchemy.sql.sqltypes import BigInteger
 
 
 DEFAULT_WELCOME_MESSAGES = [
-    "╔═════════════╗
-╠╼ʜᴇʟʟᴏ ғᴀʟʟᴇɴ ✘ ᴀssɪsᴛᴀɴᴛ
-║  ▬▬▬▬▬▬▬▬▬▬▬▬
-╠╼ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴜꜱɪᴄᴀʟꜱ
-║
-║  ▬▬▬▬▬▬▬▬▬▬▬▬
-╠╼✦ɴᴀᴍᴇ = {first}
-╠╼✦ᴜꜱᴇʀɴᴀᴍᴇ = {username}
-╠
-╠╼✦ɪᴅ = {id}
-╠╼✦ᴍᴇᴍʙᴇʀ ɴᴏ = {count}
-╠╼✦ᴄʜᴀᴛɴᴀᴍᴇ = {chatname}
-╠
-╠╼✦ᴍᴇɴᴛɪᴏɴ = {mention}
-║ ▬▬▬▬▬▬▬▬▬▬▬▬
-╚═════════════╝",
+    "╔═════════════╗/n╠╼ʜᴇʟʟᴏ {fullname}\n║  ▬▬▬▬▬▬▬▬▬▬▬▬\n╠╼ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {chatname}\n║\n║  ▬▬▬▬▬▬▬▬▬▬▬▬\n╠╼✦ɴᴀᴍᴇ = {first}\n╠╼✦ᴜꜱᴇʀɴᴀᴍᴇ = {username}\n╠\n╠╼✦ɪᴅ = {id}\n╠╼✦ᴍᴇᴍʙᴇʀ ɴᴏ = {count}\n╠╼✦ᴄʜᴀᴛɴᴀᴍᴇ = {chatname}\n╠\n╠╼✦ᴍᴇɴᴛɪᴏɴ = {mention}\n║ ▬▬▬▬▬▬▬▬▬▬▬▬\n╚═════════════╝",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
