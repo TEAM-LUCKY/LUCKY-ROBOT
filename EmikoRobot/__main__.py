@@ -420,8 +420,8 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text="❤️"
-            f"""🎧 *ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ* 🎧""",
+            text="♦️"
+            f"""*ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ꜰᴏʀ ᴍᴜꜱɪᴄ* ♦️""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
