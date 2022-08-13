@@ -22,6 +22,22 @@ ROMANTIC_STRINGS = [
                      'Tumne dekha kabhi chand se pani girte hue\nmaine dekha ye manzar tu me chehra dhote hue...',
                      'Tera pata nahi par mera dil kabhi taiyar nahi hoga\nmujhe tere alawa kabi kisi aur se pyaar nhi hoga...',
                      'Lga ke phool haathon se usne kaha chupke se\nagar yaha koi nahi hota to phool ki jagah tum hote...',
+                     'Udas shamo me wo lout\nKar aana bhul jate hain..❤️\nKar ke khafa mujhko wo\nManana bhul jate hain....💞😌',
+                     'Chalo phir yeha se ghar kaise jaoge...?
+
+🙂🔪Ye humare akhri mulakat h kuch kehna chahoge?🙃❤️
+
+
+😔❤️M to khr khel rhi thi tum to sacha isq karte the na😓🔪
+Kaise karte karke dekhau..😷🤧
+
+🤒❤️Tum to kehte the m bichrungi to mar jaooge marke dekhau😖❤️
+
+😌✨Ek bhola bhala khelta huya dil tut gyi na....🙂❤️
+
+👀❤️....Ladka chup kyu pata ..?
+
+😊❤️ ....ladki to margyi naa',
                    ]
 
 """
