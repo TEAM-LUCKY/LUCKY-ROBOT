@@ -386,7 +386,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ", url=f"https://t.me/cute_boy701"),
+                    InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ", url=f"tg://user?id=1962673406"),
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ 🥂", url=f"https://t.me/oye_golgappu"),
                  ],
                  [
