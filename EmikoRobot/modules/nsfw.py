@@ -773,7 +773,7 @@ __help__ = """
 *NSFW:*
 ❂ /addnsfw : Enable NSFW mode
 ❂ /rmnsfw : Disable NSFW mode
- 
+
 *Available commands:*  
 ❂ /neko: Sends Random SFW Neko source Images.
 ❂ /feet: Sends Random Anime Feet Images.
@@ -828,4 +828,4 @@ __help__ = """
 """
 
 
-__mod_name__ = "Pᴏʀɴ"
+__mod_name__ = "Pᴏʀɴ 🔞"
