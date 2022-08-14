@@ -16,11 +16,10 @@ async def handwrite(_, message: Message):
         API = f"https://api.sdbots.tk/write?text={text}"
         req = requests.get(API).url
         caption = f"""
-Successfully Written Text 💘
+ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 
-✨ **Written By :** [ʟᴜᴄᴋʏ'xᴅ](https://t.me/ramdimusicbot)
-🥀 **Requested by :** {message.from_user.mention}
-❄ **Link :** `{req}`
+✨ **ᴡʀɪᴛᴛᴇɴ ʙʏ :** [ʟᴜᴄᴋʏ'xᴅ](https://t.me/ramdimusicbot)
+🥀 **ʀᴇQ. ʙʏ:** {message.from_user.mention}
 """
         await m.delete()
         await fallen.send_photo(
