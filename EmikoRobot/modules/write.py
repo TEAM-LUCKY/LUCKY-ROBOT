@@ -3,7 +3,7 @@ from requests import get
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-from EmikoRobot import pbot as fallen, BOT_NAME, BOT_USERNAME
+from EmikoRobot import pbot as fallen
 
 
 @fallen.on_message(filters.command("write"))
@@ -18,7 +18,7 @@ async def handwrite(_, message: Message):
         caption = f"""
 Successfully Written Text 💘
 
-✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+✨ **Written By :** [ʟᴜᴄᴋʏ'xᴅ](https://t.me/ramdimusicbot)
 🥀 **Requested by :** {message.from_user.mention}
 ❄ **Link :** `{req}`
 """
@@ -28,7 +28,7 @@ Successfully Written Text 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
+                [[InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •", url=f"https://t.me/ramdimusicbot?startgroup=new")]]
             ),
         )
     else:
@@ -41,7 +41,7 @@ Successfully Written Text 💘
         caption = f"""
 Successfully Written Text 💘
 
-✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+✨ **Written By :** [ʟᴜᴄᴋʏ'xᴅ](https://t.me/ramdimusicbot)
 🥀 **Requested by :** {message.from_user.mention}
 ❄ **Link :** `{req}`
 """
@@ -51,7 +51,7 @@ Successfully Written Text 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •", url=f"https://t.me/{BOT_USERNAME}?startgroup=new")]]
+                [[InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •", url=f"https://t.me/ramdimusicbot?startgroup=new")]]
             ),
         )
 
