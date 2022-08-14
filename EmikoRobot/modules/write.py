@@ -54,7 +54,7 @@ async def handwrite(_, message: Message):
         )
 
 
-__mod_name__ = "Wʀɪᴛᴇ 💘"
+__mod_name__ = "𝚆ʀɪᴛᴇ 💘"
 
 __help__ = """
 
