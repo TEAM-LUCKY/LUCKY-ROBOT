@@ -219,10 +219,6 @@ DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1962673406)
 DEV_USERS.add(1962673406)
 
-BOT_ID = dispatcher.bot.id
-BOT_NAME = dispatcher.bot.first_name
-BOT_USERNAME = dispatcher.bot.username
-
 
 if not SPAMWATCH_API:
     sw = None
