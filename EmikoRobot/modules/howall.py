@@ -3,7 +3,7 @@ from .. import telethn as asst
 from telethon import Button, events
 
 BUTTON = [[
-    Button.url("❓ What Is This", "https://t.me/Black_Knights_Union/195")
+    Button.url("🍒 ꜱᴜᴘᴘᴏʀᴛ 🍒", "https://t.me/Black_Knights_Union/195")
 ]]
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
@@ -43,7 +43,7 @@ async def lezbian(e):
     await e.reply(FEK, buttons=BUTTON, file=LEZBIAN)
 
 
-@asst.on(events.NewMessage(pattern="/boobs ?(.*)"))
+@asst.on(events.NewMessage(pattern="/boob ?(.*)"))
 async def boobs(e):
     user_id = e.sender.id
     user_name = e.sender.first_name
@@ -74,14 +74,15 @@ async def cute(e):
 
 
 __help__ = """
-➛ /horny - Check Your Current Hornyess 
-➛ /gay - Check Your Current Gayness 
-➛ /lezbian - Check Your Current Lezbianess 
-➛ /boobs - Check Your Current Boobs Size 
-➛ /cock - Check Your Current Cock Size 
-➛ /cute - Check Your Current Cuteness 
+➻ /horny - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ʜᴏʀɴʏᴇꜱꜱ
 
-Note :- This Module Inspired By @HowAllBot We Just Make It For Fun Don't Take It Serious
+➻ /gay - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ɢᴜʏɴᴇꜱꜱ
+
+➻ /lezbian - ᴄʜᴇᴄᴋ ᴜʀ ᴄᴜʀʀᴇɴᴛ ʟᴀᴢʙɪᴀɴ
+
+➻ /boob - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ʙᴏᴏʙꜱ ꜱɪᴢᴇ
+
+➻ /cute - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴄᴜᴛᴇɴᴇꜱꜱ
 """
 
 __mod_name__ = "How-All"
