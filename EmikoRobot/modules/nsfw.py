@@ -769,7 +769,7 @@ __handlers__ = [
 ]
 
 """
-__help__ = """
+__help__ = 
 *NSFW:*
 ❂ /addnsfw : Enable NSFW mode
 ❂ /rmnsfw : Disable NSFW mode
