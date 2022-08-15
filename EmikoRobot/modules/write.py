@@ -27,7 +27,14 @@ async def handwrite(_, message: Message):
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •", url=f"https://t.me/ramdimusicbot?startgroup=new")]]
+                [
+                    [
+                        InlineKeyboardButton(
+                            "• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •",
+                            url=f"https://t.me/ramdimusicbot?startgroup=new",
+                        )
+                    ]
+                ]
             ),
         )
     else:
@@ -49,7 +56,14 @@ async def handwrite(_, message: Message):
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •", url=f"https://t.me/ramdimusicbot?startgroup=new")]]
+                [
+                    [
+                        InlineKeyboardButton(
+                            "• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •",
+                            url=f"https://t.me/ramdimusicbot?startgroup=new",
+                        )
+                    ]
+                ]
             ),
         )
 

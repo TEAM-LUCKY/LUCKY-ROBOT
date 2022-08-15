@@ -39,24 +39,22 @@ async def lastname(steal):
                 r = await conv.get_response()
                 response = await conv.get_response()
             except YouBlockedUserError:
-                await steal.reply(
-                    "ᴇʀʀᴏʀ, ʀᴇᴘᴏʀᴛ ᴛᴏ @TeraYaarHooMai"
-                )
+                await steal.reply("ᴇʀʀᴏʀ, ʀᴇᴘᴏʀᴛ ᴛᴏ @TeraYaarHooMai")
                 return
             if r.text.startswith("Name"):
                 respond = await conv.get_response()
                 await puki.edit(f"`{r.message}`")
                 await ubot.delete_messages(
                     conv.chat_id, [msg.id, r.id, response.id, respond.id]
-                ) 
+                )
                 return
             if response.text.startswith("ɴᴏ ʀᴇᴄᴏʀᴅꜱ") or r.text.startswith(
                 "No records"
             ):
-                await puki.edit("ɪ ᴄᴀɴᴛ ꜰɪɴᴅ ᴛʜɪꜱ ᴜꜱᴇʀ'ꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ, ᴛʜɪꜱ ᴜꜱᴇʀ ʜᴀꜱʜ ɴᴇᴠᴇʀ ᴄʜᴀɴɢᴇ ʜɪꜱ ɴᴀᴍᴇ ʙᴇꜰᴏʀᴇ.")
-                await ubot.delete_messages(
-                    conv.chat_id, [msg.id, r.id, response.id]
+                await puki.edit(
+                    "ɪ ᴄᴀɴᴛ ꜰɪɴᴅ ᴛʜɪꜱ ᴜꜱᴇʀ'ꜱ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ, ᴛʜɪꜱ ᴜꜱᴇʀ ʜᴀꜱʜ ɴᴇᴠᴇʀ ᴄʜᴀɴɢᴇ ʜɪꜱ ɴᴀᴍᴇ ʙᴇꜰᴏʀᴇ."
                 )
+                await ubot.delete_messages(conv.chat_id, [msg.id, r.id, response.id])
                 return
             else:
                 respond = await conv.get_response()

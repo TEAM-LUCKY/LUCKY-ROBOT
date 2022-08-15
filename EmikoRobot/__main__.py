@@ -104,15 +104,15 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"t.me/{bu}?startgroup=new"),
+            text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"t.me/{bu}?startgroup=new"
+        ),
     ],
     [
         InlineKeyboardButton(text="✪ ɪɴꜰᴏ ", callback_data="emiko_"),
         InlineKeyboardButton(text=" ᴍᴜꜱɪᴄ ✪", callback_data="emiko_credit"),
     ],
     [
-        InlineKeyboardButton(
-            text="⇩ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
+        InlineKeyboardButton(text="⇩ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ⇩ ", callback_data="help_back"),
     ],
 ]
 
@@ -209,7 +209,13 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="« ɢᴏ ʜᴏᴍᴇ »", callback_data="help_back")]]
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    text="« ɢᴏ ʜᴏᴍᴇ »", callback_data="help_back"
+                                )
+                            ]
+                        ]
                     ),
                 )
 
@@ -233,7 +239,8 @@ def start(update: Update, context: CallbackContext):
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
-                    sql.num_chats()),                        
+                    sql.num_chats(),
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -247,6 +254,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
+
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
@@ -387,17 +395,25 @@ def emiko_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ", url=f"tg://user?id=1962673406"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ 🥂", url=f"https://t.me/oye_golgappu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="🥀 ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ɪɴꜰᴏ 🥀", callback_data="emiko_menu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="♦️ ɢᴏ ʙᴀᴄᴋ ♦️", callback_data="source_back"),
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="🥂 ᴏᴡɴᴇʀ", url=f"tg://user?id=1962673406"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇ 🥂", url=f"https://t.me/oye_golgappu"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="🥀 ꜱᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"
+                        ),
+                        InlineKeyboardButton(text="ɪɴꜰᴏ 🥀", callback_data="emiko_menu"),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="♦️ ɢᴏ ʙᴀᴄᴋ ♦️", callback_data="source_back"
+                        ),
+                    ],
                 ]
             ),
         )
@@ -409,21 +425,23 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/lobe_ju"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/lobe_ju"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
+                    ],
                 ]
             ),
         )
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text="♦️"
-            f"""*ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ꜰᴏʀ ᴍᴜꜱɪᴄ* ♦️""",
+            text="♦️" f"""*ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ꜰᴏʀ ᴍᴜꜱɪᴄ* ♦️""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -437,17 +455,19 @@ def emiko_about_callback(update, context):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(
-                            text="🍸 ʙᴏᴛ 🍸", callback_data="emiko_bot"
-                        ),
+                        InlineKeyboardButton(text="🍸 ʙᴏᴛ 🍸", callback_data="emiko_bot"),
                         InlineKeyboardButton(
                             text="🍷 ᴇxᴛʀᴀ 🍷",
                             callback_data="emiko_extra",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="🥂 ᴏᴡɴᴇʀ 🥂", url="tg://user?id=1962673406"),
-                        InlineKeyboardButton(text="♦️ ʙᴀᴄᴋ ♦️", callback_data="source_back"),
+                        InlineKeyboardButton(
+                            text="🥂 ᴏᴡɴᴇʀ 🥂", url="tg://user?id=1962673406"
+                        ),
+                        InlineKeyboardButton(
+                            text="♦️ ʙᴀᴄᴋ ♦️", callback_data="source_back"
+                        ),
                     ],
                 ]
             ),
@@ -470,16 +490,15 @@ def emiko_about_callback(update, context):
 
 /queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
 """,
-            
-            
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"
+                        ),
+                    ]
                 ]
             ),
         )
@@ -500,16 +519,15 @@ def emiko_about_callback(update, context):
 /deleteplaylist - ᴅᴇʟᴇᴛᴇ ᴀɴʏ ꜱᴀᴠᴇᴅ ᴍᴜꜱɪᴄ ɪɴ ʏᴏᴜʀ ᴘʟᴀʏʟɪꜱᴛ
 /play  - ꜱᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ ʏᴏᴜʀ ꜱᴀᴠᴇᴅ ᴘʟᴀʏʟɪꜱᴛ ғʀᴏᴍ ꜱᴇʀᴠᴇʀꜱ.
 """,
-            
-            
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"
+                        ),
+                    ]
                 ]
             ),
         )
@@ -531,16 +549,15 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
 
 /queue ᴏʀ /cqueue- ᴄʜᴇᴄᴋ Qᴜᴇᴜᴇ ʟɪꜱᴛ ᴏꜰ ᴍᴜꜱɪᴄ.
 """,
-            
-            
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"
+                        ),
+                    ]
                 ]
             ),
         )
@@ -555,16 +572,15 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
 *🍻 ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ:*
 /settings - ɢᴇᴛ a ᴄᴏᴍᴘʟᴇᴛᴇ ɢʀᴏᴜᴘ'ꜱ ꜱᴇᴛᴛɪɴɢꜱ ᴡɪᴛʜ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴꜱ
 """,
-            
-            
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="• ʙᴀᴄᴋ •", callback_data="emiko_credit"
+                        ),
+                    ]
                 ]
             ),
         )
@@ -575,44 +591,54 @@ c ꜱᴛᴀɴᴅꜱ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/lobe_ju"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
-                 
-                 ]
+                    [
+                        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url="t.me/lobe_ju"),
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
+                    ],
                 ]
             ),
         )
-
 
     elif query.data == "emiko_menu":
         query.message.edit_text(
-            text=f"๏ {dispatcher.bot.first_name}\n"
-            f"\n ɪɴꜰᴏ ᴀʙᴏᴜᴛ ʟᴜᴄᴋʏ",
+            text=f"๏ {dispatcher.bot.first_name}\n" f"\n ɪɴꜰᴏ ᴀʙᴏᴜᴛ ʟᴜᴄᴋʏ",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ʟᴜᴄᴋʏ", url="https://t.me/cute_boy701"),
-                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/ii_1444"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/lobe_ju"),
-                    InlineKeyboardButton(text="ꜰᴜɴ", url="https://t.me/ii_1443"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="ɢɪᴛʜᴜʙ", url="https://github.com/mrluckyxd"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/oye_golgappu"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ʟᴜᴄᴋʏ", url="https://t.me/cute_boy701"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/ii_1444"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/lobe_ju"
+                        ),
+                        InlineKeyboardButton(text="ꜰᴜɴ", url="https://t.me/ii_1443"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="emiko_"),
+                    ],
                 ]
             ),
         )
+
 
 def Source_about_callback(update, context):
     query = update.callback_query
@@ -632,27 +658,25 @@ def Source_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
-                 ]
-                ]
+                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
             ),
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT.format(
+                escape_markdown(first_name),
+                escape_markdown(uptime),
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
+
 
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]

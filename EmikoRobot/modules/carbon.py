@@ -26,6 +26,7 @@ async def carbon_func(_, message):
 
 MEMEK = "https://telegra.ph/file/6f481c8679a65ddf55eeb.jpg"
 
+
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
@@ -44,13 +45,14 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "ꜱᴏᴜʀᴄᴇ", url="https://github.com/mrluckyxd/EMIKO-ROBOT"), 
-                    InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/terayaarhoomai")
+                        "ꜱᴏᴜʀᴄᴇ", url="https://github.com/mrluckyxd/EMIKO-ROBOT"
+                    ),
+                    InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/terayaarhoomai"),
                 ]
             ]
-        )
+        ),
     )
+
 
 __mod_name__ = "Cᴀʀʙᴏɴ 🍹"
 
