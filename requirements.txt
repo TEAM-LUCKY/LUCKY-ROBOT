@@ -6,7 +6,7 @@ gtts
 beautifulsoup4
 requests
 python-telegram-bot==13.13
-SQLAlchemy==1.4.40
+SQLAlchemy==1.4.39
 psycopg2-binary
 feedparser
 faker
@@ -23,7 +23,7 @@ psutil
 aiohttp
 Pillow
 CurrencyConverter
-googletrans==4.0.0
+googletrans==4.0.0rc1
 google-trans-new
 jikanpy
 speedtest-cli
@@ -43,10 +43,10 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram==2.0.40
+pyrogram==2.0.33
 PyDictionary
 git+https://github.com/Sorrybabe/downloader
-youtube_search_python==1.6.6
+youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
 asyncio
