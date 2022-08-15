@@ -1068,7 +1068,7 @@ dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
-__mod_name__ = "Aᴅᴍɪɴꜱ 🦋"
+__mod_name__ = "𝙰ᴅᴍɪɴꜱ 🦋"
 
 __help__ = """
 *ᴜꜱᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ:*
