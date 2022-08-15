@@ -28,7 +28,7 @@ async def hmm(event):
     await event.reply(k)
 
 
-__mod_name__ = "Cᴏɴᴠᴛ ♻️"
+__mod_name__ = "𝙲ᴏɴᴠᴛ ♻️"
 
 __help__ = """
 ❂ /encrypt: ᴇɴᴄʀʏᴘᴛꜱ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ
