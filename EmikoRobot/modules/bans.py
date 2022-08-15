@@ -603,7 +603,7 @@ __help__ = """
 """
 
 
-__mod_name__ = "Bᴀɴꜱ 🎀"
+__mod_name__ = "𝙱ᴀɴꜱ 🎀"
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
