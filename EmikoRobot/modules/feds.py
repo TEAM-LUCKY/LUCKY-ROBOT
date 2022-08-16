@@ -54,9 +54,9 @@ from telegram.utils.helpers import mention_html, mention_markdown
 # LOGGER.info("Original federation module by MrYacha, reworked by Mizukito Akito (@peaktogoo) on Telegram.")
 
 FBAN_ERRORS = {
-    "User is an administrator of the chat",
-    "Chat not found",
-    "Not enough rights to restrict/unrestrict chat member",
+    "ᴜꜱᴇʀʀ ɪꜱ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ᴄʜᴀᴛ",
+    "ᴄʜᴀᴛ ɴᴏᴛ ꜰᴏᴜɴᴅ",
+    "ɴᴏᴛ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛꜱ ᴛᴏ ʀᴇꜱᴛʀɪᴄᴛ ᴄʜᴀᴛ ᴍᴇᴍʙᴇʀ",
     "User_not_participant",
     "Peer_id_invalid",
     "Group chat was deactivated",
@@ -117,14 +117,14 @@ def new_fed(update: Update, context: CallbackContext):
             "*You have succeeded in creating a new federation!*"
             "\nName: `{}`"
             "\nID: `{}`"
-            "\n\nUse the command below to join the federation:"
+            "\n\nᴜꜱᴇ ᴛʜᴇᴇ ᴄᴏᴍᴍᴀɴᴅ ʙᴇʟᴏᴡ ᴛᴏ ᴊᴏɪɴ ᴛʜᴇ ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:"
             "\n`/joinfed {}`".format(fed_name, fed_id, fed_id),
             parse_mode=ParseMode.MARKDOWN,
         )
         try:
             bot.send_message(
                 EVENT_LOGS,
-                "New Federation: <b>{}</b>\nID: <pre>{}</pre>".format(fed_name, fed_id),
+                "ɴᴇᴡ ꜰᴇᴅʀᴀᴛɪᴏɴ: <b>{}</b>\nɪᴅ: <pre>{}</pre>".format(fed_name, fed_id),
                 parse_mode=ParseMode.HTML,
             )
         except:
@@ -171,11 +171,11 @@ def del_fed(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚠️ Delete Federation ⚠️",
+                        text="⚠️ ᴅᴇʟᴇᴛᴇ ꜰᴇᴅʀᴀᴛɪᴏɴ ⚠️",
                         callback_data="rmfed_{}".format(fed_id),
                     ),
                 ],
-                [InlineKeyboardButton(text="Cancel", callback_data="rmfed_cancel")],
+                [InlineKeyboardButton(text="ᴄᴀɴᴄᴇʟ", callback_data="rmfed_cancel")],
             ],
         ),
     )
@@ -223,8 +223,8 @@ def fed_chat(update: Update, context: CallbackContext):
     chat = update.effective_chat
     info = sql.get_fed_info(fed_id)
 
-    text = "This group is part of the following federation:"
-    text += "\n{} (ID: <code>{}</code>)".format(info["fname"], fed_id)
+    text = "ᴛʜɪꜱ ɢʀᴏᴜᴘᴘ ɪꜱ ᴘᴀʀᴛ ᴏꜰ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ꜰᴇᴅʀᴀᴛɪᴏɴ:"
+    text += "\n{} (ɪᴅ: <code>{}</code>)".format(info["fname"], fed_id)
 
     update.effective_message.reply_text(text, parse_mode=ParseMode.HTML)
 
@@ -255,11 +255,11 @@ def join_fed(update: Update, context: CallbackContext):
                     pass
                 else:
                     update.effective_message.reply_text(
-                        "Only group creators can use this command!",
+                        "ᴏɴʟʏ ɢʀᴏᴜᴘ ᴄʀᴇᴀᴛᴏʀꜱ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ!",
                     )
                     return
     if fed_id:
-        message.reply_text("You cannot join two federations from one chat")
+        message.reply_text("ʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴊᴏɪɴ ᴛᴡᴏ ꜰᴇᴅᴇʀᴀᴛɪᴏɴꜱ ꜰʀᴏᴍ ᴏɴᴇ ᴄʜᴀᴛ")
         return
 
     if len(args) >= 1:
@@ -280,7 +280,7 @@ def join_fed(update: Update, context: CallbackContext):
             if ast.literal_eval(get_fedlog):
                 bot.send_message(
                     get_fedlog,
-                    "Chat *{}* has joined the federation *{}*".format(
+                    "ᴄʜᴀᴛ *{}* ʜᴀꜱ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜰᴇᴅᴇʀᴀᴛɪᴏɴ *{}*".format(
                         chat.title,
                         getfed["fname"],
                     ),
@@ -288,7 +288,7 @@ def join_fed(update: Update, context: CallbackContext):
                 )
 
         message.reply_text(
-            "This group has joined the federation: {}!".format(getfed["fname"]),
+            "ᴛʜɪꜱ ɢʀᴏᴜᴘ ʜᴀꜱ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ꜰᴇᴅᴇʀᴀᴛɪᴏɴ: {}!".format(getfed["fname"]),
         )
 
 
@@ -495,15 +495,15 @@ def fed_info(update: Update, context: CallbackContext):
     chat = update.effective_chat
     info = sql.get_fed_info(fed_id)
 
-    text = "<b>ℹ️ Federation Information:</b>"
-    text += "\nFedID: <code>{}</code>".format(fed_id)
-    text += "\nName: {}".format(info["fname"])
-    text += "\nCreator: {}".format(mention_html(owner.id, owner_name))
-    text += "\nAll Admins: <code>{}</code>".format(TotalAdminFed)
+    text = "<b>ℹ️ ꜰᴇᴅ ɪɴꜰᴏ:</b>"
+    text += "\n*ꜰᴇᴅ ɪᴅ*: <code>{}</code>".format(fed_id)
+    text += "\n*ɴᴀᴍᴇ:* {}".format(info["fname"])
+    text += "\n*ᴄʀᴇᴀᴛᴏʀ*: {}".format(mention_html(owner.id, owner_name))
+    text += "\nᴀᴅᴍɪɴꜱ: <code>{}</code>".format(TotalAdminFed)
     getfban = sql.get_all_fban_users(fed_id)
-    text += "\nTotal banned users: <code>{}</code>".format(len(getfban))
+    text += "\n*ʙᴀɴɴᴇᴅ ᴜꜱᴇʀꜱ*: <code>{}</code>".format(len(getfban))
     getfchat = sql.all_fed_chats(fed_id)
-    text += "\nNumber of groups in this federation: <code>{}</code>".format(
+    text += "\n*ɢʀᴏᴜᴘꜱ ᴡʜɪᴄʜ ᴊᴏɪɴ ᴛʜɪꜱ ꜰᴇᴅ*: <code>{}</code>".format(
         len(getfchat),
     )
 
@@ -536,8 +536,8 @@ def fed_admin(update: Update, context: CallbackContext):
     chat = update.effective_chat
     info = sql.get_fed_info(fed_id)
 
-    text = "<b>Federation Admin {}:</b>\n\n".format(info["fname"])
-    text += "👑 Owner:\n"
+    text = "<b>ꜰᴇᴅʀᴀᴛɪᴏɴ ᴀᴅᴍɪɴ {}:</b>\n\n".format(info["fname"])
+    text += "👑 ᴏᴡɴᴇʀ:\n"
     owner = bot.get_chat(info["owner"])
     try:
         owner_name = owner.first_name + " " + owner.last_name
@@ -547,9 +547,9 @@ def fed_admin(update: Update, context: CallbackContext):
 
     members = sql.all_fed_members(fed_id)
     if len(members) == 0:
-        text += "\n🔱 There are no admins in this federation"
+        text += "\n🔱 ᴛʜᴇʀᴇ ᴀʀᴇ ɴᴏ ᴀᴅᴍɪɴꜱ ɪɴ ᴛʜɪꜱ ꜰᴇᴅᴇʀᴀᴛɪᴏɴ"
     else:
-        text += "\n🔱 Admin:\n"
+        text += "\n🔱 ᴀᴅᴍɪɴ:\n"
         for x in members:
             user = bot.get_chat(x)
             text += " • {}\n".format(mention_html(user.id, user.first_name))
@@ -689,12 +689,12 @@ def fed_ban(update: Update, context: CallbackContext):
         # Will send to current chat
         bot.send_message(
             chat.id,
-            "<b>FedBan reason updated</b>"
-            "\n<b>Federation:</b> {}"
-            "\n<b>Federation Admin:</b> {}"
-            "\n<b>User:</b> {}"
-            "\n<b>User ID:</b> <code>{}</code>"
-            "\n<b>Reason:</b> {}".format(
+            "<b>ꜰᴇᴅʙᴀɴ ʀᴇᴀꜱᴏɴ ᴜᴘᴅᴀᴛᴇᴅ</b>"
+            "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:</b> {}"
+            "\n<b>ꜰᴇᴅ ᴀᴅᴍɪɴ:</b> {}"
+            "\n<b>ᴜꜱᴇʀ:</b> {}"
+            "\n<b>ᴜꜱᴇʀ ɪᴅ:</b> <code>{}</code>"
+            "\n<b>ʀᴇᴀꜱᴏɴ:</b> {}".format(
                 fed_name,
                 mention_html(user.id, user.first_name),
                 user_target,
@@ -707,12 +707,12 @@ def fed_ban(update: Update, context: CallbackContext):
         if getfednotif:
             bot.send_message(
                 info["owner"],
-                "<b>FedBan reason updated</b>"
-                "\n<b>Federation:</b> {}"
-                "\n<b>Federation Admin:</b> {}"
-                "\n<b>User:</b> {}"
-                "\n<b>User ID:</b> <code>{}</code>"
-                "\n<b>Reason:</b> {}".format(
+                "<b>ꜰᴇᴅʙᴀɴ ʀᴇᴀꜱᴏɴ ᴜᴘᴅᴀᴛᴇᴅ</b>"
+                "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:</b> {}"
+                "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ ᴀᴅᴍɪɴ:</b> {}"
+                "\n<b>ᴜꜱᴇʀ:</b> {}"
+                "\n<b>ᴜꜱᴇʀ ɪᴅ:</b> <code>{}</code>"
+                "\n<b>ʀᴇᴀꜱᴏɴ:</b> {}".format(
                     fed_name,
                     mention_html(user.id, user.first_name),
                     user_target,
@@ -850,12 +850,12 @@ def fed_ban(update: Update, context: CallbackContext):
     # Will send to current chat
     bot.send_message(
         chat.id,
-        "<b>New FedBan</b>"
-        "\n<b>Federation:</b> {}"
-        "\n<b>Federation Admin:</b> {}"
-        "\n<b>User:</b> {}"
-        "\n<b>User ID:</b> <code>{}</code>"
-        "\n<b>Reason:</b> {}".format(
+        "<b>🍒 ɴᴇᴡ ꜰᴇᴅʙᴀɴ</b>"
+        "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:</b> {}"
+        "\n<b>ꜰᴇᴅ ᴀᴅᴍɪɴ:</b> {}"
+        "\n<b>ᴜꜱᴇʀ:</b> {}"
+        "\n<b>ᴜꜱᴇʀ ɪᴅ:</b> <code>{}</code>"
+        "\n<b>ʀᴇᴀꜱᴏɴ:</b> {}".format(
             fed_name,
             mention_html(user.id, user.first_name),
             user_target,
@@ -868,12 +868,12 @@ def fed_ban(update: Update, context: CallbackContext):
     if getfednotif:
         bot.send_message(
             info["owner"],
-            "<b>New FedBan</b>"
-            "\n<b>Federation:</b> {}"
-            "\n<b>Federation Admin:</b> {}"
-            "\n<b>User:</b> {}"
-            "\n<b>User ID:</b> <code>{}</code>"
-            "\n<b>Reason:</b> {}".format(
+            "<b>ɴᴇᴡ ꜰᴇᴅʙᴀɴ</b>"
+            "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:</b> {}"
+            "\n<b>ꜰᴇᴅ ᴀᴅᴍɪɴ:</b> {}"
+            "\n<b>ᴜꜱᴇʀ:</b> {}"
+            "\n<b>ᴜꜱᴇʀ ɪᴅ:</b> <code>{}</code>"
+            "\n<b>ʀᴇᴀꜱᴏɴ:</b> {}".format(
                 fed_name,
                 mention_html(user.id, user.first_name),
                 user_target,
@@ -888,12 +888,12 @@ def fed_ban(update: Update, context: CallbackContext):
         if int(get_fedlog) != int(chat.id):
             bot.send_message(
                 get_fedlog,
-                "<b>New FedBan</b>"
-                "\n<b>Federation:</b> {}"
-                "\n<b>Federation Admin:</b> {}"
-                "\n<b>User:</b> {}"
-                "\n<b>User ID:</b> <code>{}</code>"
-                "\n<b>Reason:</b> {}".format(
+                "<b>ɴᴇᴡ ꜰᴇᴅʙᴀɴ</b>"
+                "\n<b>ꜰᴇᴅᴇʀᴀᴛɪᴏɴ:</b> {}"
+                "\n<b>ꜰᴇᴅ ᴀᴅᴍɪɴ:</b> {}"
+                "\n<b>ᴜꜱᴇʀ:</b> {}"
+                "\n<b>ᴜꜱᴇʀ ɪᴅ:</b> <code>{}</code>"
+                "\n<b>ʀᴇᴀꜱᴏɴ:</b> {}".format(
                     fed_name,
                     mention_html(user.id, user.first_name),
                     user_target,
