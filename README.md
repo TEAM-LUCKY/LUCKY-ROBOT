@@ -24,21 +24,18 @@ src="https://img.shields.io/badge/Dᴇᴘʟᴏʏ%20ᴛᴏ%20ʜᴇʀᴏᴋᴜ-pin
 
 ### TUTORIAL
 
-- First fork this repository.
-- Then change the deploy link bellow.
-- This step must be doing because mine link is violates the salesforce acceptable use.
-- You can just change the name of github on deploy link and done, the repos able to deploy on heroku.
-- Full Tutorial - [![Full Tutorial](https://img.shields.io/badge/Watch%20Now-blue)](https://youtu.be/GMaYMYhf_Vk)
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴛʜɪꜱ ʀᴇᴘᴏ ɴᴅ ɢɪᴠᴇ ꜱᴛᴀʀ.
+- ᴛʜᴇɴ ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴅᴇᴘʟᴏʏ ʟɪɴᴋ ʙᴇʟᴏᴡ.
+- ᴛʜɪꜱ ꜱᴛᴇᴘ ᴍᴜꜱᴛ ʙᴇ ᴅᴏɪɴɢ ʙᴄᴏᴢ ᴍɪɴᴇ ʟɪɴᴋ ɪꜱ ᴠɪᴏʟᴀᴛᴇꜱ ᴛʜᴇ ꜱᴀʟᴇꜱꜰᴏʀᴄᴇ ᴀᴄᴄᴇᴘᴛᴀʙʟᴇ ᴜꜱᴇ.
+- ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴛʜᴇ ɴᴀᴍᴇ ᴏꜰ ɢɪᴛʜᴜʙ ᴏɴ ᴅᴇᴘʟᴏʏ ʟɪɴᴋ ᴀɴᴅ ᴅᴏɴᴇ, ᴛʜᴇ ʀᴇᴘᴏꜱ ᴀʙʟᴇ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ.
+- ꜰᴜʟʟ ᴛᴜᴛᴏʀɪᴀʟ - [![ꜰᴜʟʟ ᴛᴜᴛᴏʀɪᴀʟ](https://img.shields.io/badge/Watch%20Now-blue)](https://youtu.be/GMaYMYhf_Vk)
 
 
 ```
-This Bot is Created by KennedyProject, If your kanging this without fork at least give a credit to get a smile of my hard work. 
-- EmikoRobot
-- YoneRobot
-- SaitamaRobot 
-- TheRealPhoenixBot
-- DaisyX 
-- WilliamButcherBot
+ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴛᴇᴀᴍ-ʟᴜᴄᴋʏ.
+- ᴇᴍɪᴋᴏ-ʀᴏʙᴏᴛ
+- ʟᴜᴄᴋʏ-ʀᴏʙᴏᴛ
+- ᴡɪʟʟɪᴜᴍʙᴜᴛʜᴇʀ ʙᴏᴛ
 ```
 
 ### Support
@@ -50,8 +47,8 @@ This Bot is Created by KennedyProject, If your kanging this without fork at leas
 
 ## Credit 
 
-• [Sena](https://github.com/kennedy-ex)
+• [ꜱᴇɴᴀ](https://github.com/kennedy-ex)
 
-• [Arya](https://github.com/aryazakaria01)
+• [ᴀʀʏᴀ](https://github.com/aryazakaria01)
 
-• [Kyy](https://github.com/zxcskyy)
+• [ᴋʏʏ](https://github.com/zxcskyy)
